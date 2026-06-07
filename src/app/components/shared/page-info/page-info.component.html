@@ -1,0 +1,29 @@
+<div class="flex items-center justify-between px-4 py-3 bg-slate-50/50 dark:bg-white/[0.01] border-t border-slate-200 dark:border-white/[0.06] flex-wrap gap-3">
+  
+  <div class="text-xs text-slate-500 dark:text-slate-400">
+    Showing
+    <span class="font-medium text-slate-800 dark:text-slate-200">{{ startEntry }}</span> to
+    <span class="font-medium text-slate-800 dark:text-slate-200">{{ endEntry }}</span> of
+    <span class="font-medium text-slate-800 dark:text-slate-200">{{ totalItems }}</span> entries
+  </div>
+
+  <div class="flex items-center gap-4">
+    <div class="flex items-center gap-1.5">
+      <span class="text-xs font-medium text-slate-500">Show</span>
+      <select [ngModel]="pageSize" (ngModelChange)="onPageSizeChange($event)"
+        class="form-control h-8 w-16 text-xs !px-1.5 !py-0.5">
+        <option [value]="10">10</option>
+        <option [value]="25">25</option>
+        <option [value]="50">50</option>
+        <option [value]="100">100</option>
+      </select>
+      <span class="text-xs font-medium text-slate-500">entries</span>
+    </div>
+    <app-page-switcher
+      [page]="page"
+      [totalPages]="totalPages"
+      [pagesArray]="pagesArray"
+      (pageChange)="onPageChange($event)">
+    </app-page-switcher>
+  </div>
+</div>

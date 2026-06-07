@@ -1,0 +1,101 @@
+<header class="header">
+  <div class="flex items-center gap-8">
+    <div class="header-brand" routerLink="/dashboard">
+      <i class="fa fa-users text-blue-500"></i>
+      <span>AVOWS</span>
+    </div>
+
+    <nav class="hidden lg:flex items-center gap-1">
+      <a routerLink="/dashboard" routerLinkActive="header-nav-active" class="header-nav-link">
+        <i class="fa fa-th-large"></i>
+        <span>Dashboard</span>
+      </a>
+
+      <div class="relative group" (mouseenter)="isMasterMenuOpen = true" (mouseleave)="isMasterMenuOpen = false">
+        <button class="header-nav-link flex items-center gap-1 cursor-pointer">
+          <i class="fa fa-database"></i>
+          <span>Master</span>
+          <i class="fa fa-chevron-down text-[10px] ml-1"></i>
+        </button>
+
+        <div *ngIf="isMasterMenuOpen" class="absolute left-0 top-full w-48 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-md shadow-lg py-1 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+          <a routerLink="/employees" routerLinkActive="bg-slate-50 dark:bg-slate-700/50 text-brand font-medium" class="block px-4 py-2.5 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50 hover:text-brand transition-colors" [routerLinkActiveOptions]="{exact: true}">
+            <i class="fa fa-users w-5 text-center"></i> Employee
+          </a>
+          <a routerLink="/groups" routerLinkActive="bg-slate-50 dark:bg-slate-700/50 text-brand font-medium" class="block px-4 py-2.5 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50 hover:text-brand transition-colors">
+            <i class="fa fa-sitemap w-5 text-center"></i> Group
+          </a>
+        </div>
+      </div>
+
+      <a routerLink="/employees/report" routerLinkActive="header-nav-active" class="header-nav-link">
+        <i class="fa fa-file-text-o"></i>
+        <span>Report</span>
+      </a>
+    </nav>
+  </div>
+
+  <div class="header-actions">
+    <div *ngIf="isLoggedIn" class="relative flex items-center gap-3">
+
+      <button (click)="toggleDropdown()"
+        class="flex items-center gap-2 text-sm text-slate-400 font-medium hover:text-white dark:hover:text-white hover:text-slate-900 transition-colors focus:outline-none">
+        <span>Hi, {{ username }}</span>
+        <i class="fa" [ngClass]="isDropdownOpen ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+      </button>
+
+      <button class="lg:hidden text-slate-400 hover:text-slate-900 dark:hover:text-white text-lg focus:outline-none" (click)="toggleMobileMenu()" aria-label="Toggle Menu">
+        <i class="fa" [ngClass]="isMobileMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+      </button>
+
+      <div *ngIf="isDropdownOpen"
+        class="absolute right-0 top-full mt-2 w-48 rounded-md bg-slate-800 dark:bg-slate-800 bg-white border border-slate-200 dark:border-slate-700 shadow-lg py-1 z-50">
+        <button class="w-full text-left px-4 py-2 text-sm text-slate-300 dark:text-slate-300 text-slate-700 hover:bg-slate-700 dark:hover:bg-slate-700/50 hover:bg-slate-100 flex items-center gap-2"
+          (click)="toggleTheme(); toggleDropdown()" title="Toggle Light/Dark Theme">
+          <i class="fa"
+            [ngClass]="themeService.isDarkTheme() ? 'fa-sun-o text-yellow-400' : 'fa-moon-o text-slate-400'"></i>
+          <span>{{ themeService.isDarkTheme() ? 'Light Mode' : 'Dark Mode' }}</span>
+        </button>
+
+        <div class="border-t border-slate-200 dark:border-slate-700 my-1"></div>
+
+        <button class="w-full text-left px-4 py-2 text-sm text-red-500 hover:bg-slate-700 dark:hover:bg-slate-700/50 hover:bg-slate-100 flex items-center gap-2"
+          (click)="logout(); toggleDropdown()">
+          <i class="fa fa-sign-out"></i>
+          <span>Logout</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<div *ngIf="isLoggedIn && isMobileMenuOpen" 
+  class="lg:hidden border-b bg-white dark:bg-slate-900 border-slate-200 dark:border-white/[0.08] px-4 py-2 flex flex-col gap-1.5 shadow-md sticky top-[57px] z-40">
+  <a routerLink="/dashboard" routerLinkActive="header-nav-active" class="header-nav-link justify-start py-2.5">
+    <i class="fa fa-th-large w-6"></i>
+    <span>Dashboard</span>
+  </a>
+
+  <button (click)="isMobileMasterMenuOpen = !isMobileMasterMenuOpen" class="header-nav-link justify-between py-2.5 w-full flex items-center">
+    <div class="flex items-center gap-1.5">
+      <i class="fa fa-database w-6"></i>
+      <span>Master</span>
+    </div>
+    <i class="fa" [ngClass]="isMobileMasterMenuOpen ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+  </button>
+  
+  <div *ngIf="isMobileMasterMenuOpen" class="flex flex-col gap-1 pl-9 pr-2 py-1.5 bg-slate-50 dark:bg-slate-800/30 rounded-md mb-1">
+    <a routerLink="/employees" routerLinkActive="text-brand font-medium" class="py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:text-brand transition-colors flex items-center gap-2" [routerLinkActiveOptions]="{exact: true}">
+      <i class="fa fa-users w-5"></i> Employee
+    </a>
+    <a routerLink="/groups" routerLinkActive="text-brand font-medium" class="py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:text-brand transition-colors flex items-center gap-2">
+      <i class="fa fa-sitemap w-5"></i> Group
+    </a>
+  </div>
+
+  <a routerLink="/employees/report" routerLinkActive="header-nav-active" class="header-nav-link justify-start py-2.5">
+    <i class="fa fa-file-text-o w-6"></i>
+    <span>Report</span>
+  </a>
+</div>

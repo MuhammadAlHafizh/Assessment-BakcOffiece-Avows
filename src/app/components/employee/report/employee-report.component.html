@@ -1,0 +1,153 @@
+<div class="app-container !min-h-screen flex flex-col hide-on-print">
+  <app-header></app-header>
+
+  <main class="main-content !max-w-screen-2xl flex-1 flex flex-col">
+    
+    <div class="flex flex-col gap-1 mb-6">
+      <h1 class="page-title">Employee Report</h1>
+      <app-breadcrumb [items]="breadcrumbs"></app-breadcrumb>
+    </div>
+
+    <div class="glass-panel mb-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+        <div>
+          <label
+            class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">Search
+            Keyword</label>
+          <input type="text" [(ngModel)]="filterKeyword" class="form-control" placeholder="Name, username, email..." />
+        </div>
+        <div>
+          <label
+            class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">Group</label>
+          <select [(ngModel)]="filterGroup" class="form-control">
+            <option value="">All Groups</option>
+            <option *ngFor="let g of groups" [value]="g">{{ g }}</option>
+          </select>
+        </div>
+        <div>
+          <label
+            class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">Status</label>
+          <select [(ngModel)]="filterStatus" class="form-control">
+            <option value="">All Status</option>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+          </select>
+        </div>
+        <div class="flex gap-2">
+          <app-button variant="solid"
+            customClass="flex-1 py-2 !bg-brand hover:!bg-blue-600 text-white flex justify-center items-center gap-2"
+            (btnClick)="generateReport()">
+            <i class="fa fa-filter"></i> Generate Report
+          </app-button>
+          <app-button variant="outline" customClass="py-2 px-4" (btnClick)="resetReport()">
+            <i class="fa fa-refresh"></i> Reset
+          </app-button>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-panel flex-1 flex flex-col !p-0 overflow-hidden relative" *ngIf="hasGenerated">
+      <div
+        class="p-4 border-b border-slate-200 dark:border-white/[0.06] flex items-center justify-between bg-slate-50/50 dark:bg-white/[0.01]">
+        <h3 class="font-semibold text-slate-800 dark:text-slate-200">Data Preview</h3>
+        <div class="flex gap-2">
+          <app-button variant="outline" customClass="py-1.5 px-3 text-xs" (btnClick)="printReport()">
+            <i class="fa fa-print"></i> Print
+          </app-button>
+          <app-button variant="solid"
+            customClass="py-1.5 px-3 text-xs !bg-emerald-500 hover:!bg-emerald-600 text-white border-0"
+            (btnClick)="exportToExcel()">
+            <i class="fa" [ngClass]="{'fa-spinner fa-spin': isExporting, 'fa-file-excel-o': !isExporting}"></i>
+            {{ isExporting ? 'Exporting...' : 'Export Excel' }}
+          </app-button>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="bg-slate-100/60 dark:bg-white/[0.02] border-b border-slate-200 dark:border-white/[0.06]">
+              <th
+                class="px-4 py-3 text-left text-xs font-bold uppercase tracking-wider text-slate-800 dark:text-slate-400">
+                ID</th>
+              <th
+                class="px-4 py-3 text-left text-xs font-bold uppercase tracking-wider text-slate-800 dark:text-slate-400">
+                Name</th>
+              <th
+                class="px-4 py-3 text-left text-xs font-bold uppercase tracking-wider text-slate-800 dark:text-slate-400">
+                Username</th>
+              <th
+                class="px-4 py-3 text-left text-xs font-bold uppercase tracking-wider text-slate-800 dark:text-slate-400">
+                Group</th>
+              <th
+                class="px-4 py-3 text-left text-xs font-bold uppercase tracking-wider text-slate-800 dark:text-slate-400">
+                Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let emp of previewData"
+              class="border-t border-slate-200 dark:border-white/[0.04] hover:bg-slate-50 dark:hover:bg-white/[0.02] transition-colors">
+              <td class="px-4 py-3 text-sm font-mono text-slate-500">{{ emp.id.substring(0, 8) }}</td>
+              <td class="px-4 py-3 font-semibold text-brand">{{ emp.firstName }} {{ emp.lastName }}</td>
+              <td class="px-4 py-3 text-sm text-slate-600 dark:text-slate-400">{{ emp.username }}</td>
+              <td class="px-4 py-3 text-sm">{{ emp.group.name }}</td>
+              <td class="px-4 py-3">
+                <span class="badge" [ngClass]="emp.status === 'Active' ? 'badge-active' : 'badge-inactive'">
+                  {{ emp.status }}
+                </span>
+              </td>
+            </tr>
+            <tr *ngIf="previewData.length === 0 && !isGenerating">
+              <td colspan="5" class="text-center py-10 text-slate-500 text-sm">No data found matching your criteria.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div
+        class="py-6 flex justify-center bg-slate-50/50 dark:bg-slate-900/10 border-t border-slate-200 dark:border-slate-800"
+        *ngIf="isGenerating">
+        <div class="flex items-center gap-2 text-brand">
+          <i class="fa fa-spinner fa-spin text-xl"></i>
+          <span class="text-sm font-medium">Loading data...</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="print-only">
+  <div class="print-header">
+    <h2 style="margin: 0;">Employee Report</h2>
+    <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Generated on: {{ todayString | date:'medium' }}</p>
+    <div style="margin-top: 10px; font-size: 12px; display: flex; gap: 15px;">
+      <span *ngIf="filterKeyword"><strong>Keyword:</strong> {{ filterKeyword }}</span>
+      <span *ngIf="filterGroup"><strong>Group:</strong> {{ filterGroup }}</span>
+      <span *ngIf="filterStatus"><strong>Status:</strong> {{ filterStatus }}</span>
+    </div>
+  </div>
+
+  <table class="print-table">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Group</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of previewData; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ emp.firstName }} {{ emp.lastName }}</td>
+        <td>{{ emp.username }}</td>
+        <td>{{ emp.email }}</td>
+        <td>{{ emp.group.name }}</td>
+        <td>{{ emp.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

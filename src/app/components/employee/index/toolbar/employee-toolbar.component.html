@@ -1,0 +1,111 @@
+<div class="glass-panel !p-3 mb-4 !rounded">
+
+  <div class="hidden lg:flex items-center justify-between gap-3 flex-wrap">
+
+    <div class="flex items-center gap-3 flex-wrap">
+      <app-button (btnClick)="router.navigate(['/employees/create'])" variant="solid" customClass="h-9 px-4 text-xs !bg-brand">
+        <i class="fa fa-plus"></i> New
+      </app-button>
+      <app-button (btnClick)="onReset()" variant="outline" customClass="h-9 px-4 text-xs border border-brand text-brand">
+        <i class="fa fa-refresh"></i> Reset
+      </app-button>
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-medium text-slate-400 whitespace-nowrap">View Status</span>
+        <select [ngModel]="statusFilter" (ngModelChange)="onStatusFilterChange($event)"
+          class="form-control h-9 w-28 text-xs !px-2 !py-1">
+          <option value="">All</option>
+          <option value="Active">Active</option>
+          <option value="Inactive">Inactive</option>
+        </select>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-medium text-slate-400 whitespace-nowrap">Group</span>
+        <select [ngModel]="searchGroup" (ngModelChange)="onSearchGroupChange($event)"
+          class="form-control h-9 w-36 text-xs !px-2 !py-1">
+          <option value="">All Groups</option>
+          <option *ngFor="let g of groups" [value]="g">{{ g }}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-medium text-slate-400 whitespace-nowrap">Change Status to</span>
+        <select [ngModel]="bulkStatusTarget" (ngModelChange)="onBulkStatusTargetChange($event)" class="form-control h-9 w-28 text-xs !px-2 !py-1">
+          <option value="Active">Active</option>
+          <option value="Inactive">Inactive</option>
+        </select>
+        <app-button (btnClick)="onApplyBulkStatus()" variant="outline" customClass="h-9 px-3 text-xs border border-brand text-brand">
+          Go
+        </app-button>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <span class="text-xs font-medium text-slate-400 whitespace-nowrap">Show</span>
+        <select [ngModel]="pageSize" (ngModelChange)="onPageSizeChange($event)" class="form-control h-9 w-16 text-xs !px-1.5 !py-1">
+          <option [value]="10">10</option>
+          <option [value]="25">25</option>
+          <option [value]="50">50</option>
+          <option [value]="100">100</option>
+        </select>
+        <span class="text-xs font-medium text-slate-400 whitespace-nowrap">entries</span>
+      </div>
+      <app-page-switcher [page]="page" [totalPages]="totalPages" [pagesArray]="pagesArray" (pageChange)="onPageChange($event)"></app-page-switcher>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-3 lg:hidden">
+
+    <div class="flex flex-col sm:flex-row gap-2">
+      <app-button (btnClick)="router.navigate(['/employees/create'])" variant="solid" customClass="w-full h-10 justify-center text-sm !bg-brand">
+        <i class="fa fa-plus"></i> New
+      </app-button>
+      <app-button (btnClick)="onReset()" variant="outline" customClass="w-full h-10 justify-center text-sm border border-brand text-brand">
+        <i class="fa fa-refresh"></i> Reset
+      </app-button>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-3">
+      <div class="flex-1 flex flex-col gap-1">
+        <span class="text-xs font-medium text-slate-400">View Status</span>
+        <select [ngModel]="statusFilter" (ngModelChange)="onStatusFilterChange($event)"
+          class="form-control h-10 w-full text-sm">
+          <option value="">All</option>
+          <option value="Active">Active</option>
+          <option value="Inactive">Inactive</option>
+        </select>
+      </div>
+
+      <div class="flex-1 flex flex-col gap-1">
+        <span class="text-xs font-medium text-slate-400">Group</span>
+        <select [ngModel]="searchGroup" (ngModelChange)="onSearchGroupChange($event)"
+          class="form-control h-10 w-full text-sm">
+          <option value="">All Groups</option>
+          <option *ngFor="let g of groups" [value]="g">{{ g }}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-1">
+      <span class="text-xs font-medium text-slate-400">Change Status to</span>
+      <div class="flex gap-2">
+        <select [ngModel]="bulkStatusTarget" (ngModelChange)="onBulkStatusTargetChange($event)" class="form-control h-10 flex-1 text-sm">
+          <option value="Active">Active</option>
+          <option value="Inactive">Inactive</option>
+        </select>
+        <app-button (btnClick)="onApplyBulkStatus()" variant="outline" customClass="h-10 px-6 text-sm border border-brand text-brand flex-shrink-0">
+          Go
+        </app-button>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-1">
+      <span class="text-xs font-medium text-slate-400">Show Entries</span>
+      <select [ngModel]="pageSize" (ngModelChange)="onPageSizeChange($event)" class="form-control h-10 w-full text-sm">
+        <option [value]="10">10 entries</option>
+        <option [value]="25">25 entries</option>
+        <option [value]="50">50 entries</option>
+        <option [value]="100">100 entries</option>
+      </select>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,169 @@
+<div class="app-container">
+  
+  <app-header></app-header>
+
+  <main class="main-content !max-w-screen-2xl">
+    <div class="flex flex-col gap-1 mb-6">
+      <h1 class="page-title">Dashboard</h1>
+      <app-breadcrumb [items]="breadcrumbs"></app-breadcrumb>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+
+      <div class="dash-card group">
+        <div class="dash-card-icon bg-blue-500/15 text-blue-400 group-hover:bg-blue-500/25">
+          <i class="fa fa-users"></i>
+        </div>
+        <div class="flex-1 min-w-0">
+          <p class="dash-card-label">Total Employee</p>
+          <p class="dash-card-value text-blue-400">{{ totalKaryawan }}</p>
+        </div>
+        <i class="fa fa-user text-2xl text-blue-400/10 flex-shrink-0"></i>
+      </div>
+
+      <div class="dash-card group">
+        <div class="dash-card-icon bg-emerald-500/15 text-emerald-400 group-hover:bg-emerald-500/25">
+          <i class="fa fa-check-circle"></i>
+        </div>
+        <div class="flex-1 min-w-0">
+          <p class="dash-card-label">Active</p>
+          <p class="dash-card-value text-emerald-400">{{ totalAktif }}</p>
+        </div>
+        <span class="text-xs text-emerald-400/60 font-semibold flex-shrink-0">
+          {{ totalKaryawan > 0 ? ((totalAktif / totalKaryawan) * 100 | number:'1.0-0') : 0 }}%
+        </span>
+      </div>
+
+      <div class="dash-card group">
+        <div class="dash-card-icon bg-rose-500/15 text-rose-400 group-hover:bg-rose-500/25">
+          <i class="fa fa-times-circle"></i>
+        </div>
+        <div class="flex-1 min-w-0">
+          <p class="dash-card-label">In Active</p>
+          <p class="dash-card-value text-rose-400">{{ totalNonAktif }}</p>
+        </div>
+        <span class="text-xs text-rose-400/60 font-semibold flex-shrink-0">
+          {{ totalKaryawan > 0 ? ((totalNonAktif / totalKaryawan) * 100 | number:'1.0-0') : 0 }}%
+        </span>
+      </div>
+
+      <div class="dash-card group">
+        <div class="dash-card-icon bg-purple-500/15 text-purple-400 group-hover:bg-purple-500/25">
+          <i class="fa fa-sitemap"></i>
+        </div>
+        <div class="flex-1 min-w-0">
+          <p class="dash-card-label">Total Grup</p>
+          <p class="dash-card-value text-purple-400">{{ totalGrup }}</p>
+        </div>
+        <i class="fa fa-sitemap text-2xl text-purple-400/10 flex-shrink-0"></i>
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-5">
+
+      <div class="glass-panel lg:col-span-2 flex flex-col">
+        <div class="flex items-center justify-between mb-5">
+          <div>
+            <h2 class="font-semibold text-sm text-slate-800 dark:text-slate-200">Employees by Group</h2>
+            <p class="text-xs text-slate-500 mt-0.5">Distribusi jumlah karyawan berdasarkan grup</p>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-500 inline-block"></span>
+            <span class="text-xs text-slate-500">Total</span>
+          </div>
+        </div>
+        <div class="relative" style="height:260px">
+          <canvas #barCanvas></canvas>
+        </div>
+      </div>
+
+      <div class="glass-panel flex flex-col">
+        <div class="mb-4">
+          <h2 class="font-semibold text-sm text-slate-800 dark:text-slate-200">Status Employee</h2>
+          <p class="text-xs text-slate-500 mt-0.5">Active vs In Active</p>
+        </div>
+        <div class="relative" style="height:200px">
+          <canvas #statusCanvas></canvas>
+        </div>
+        <div class="text-center mt-4">
+          <p class="text-2xl font-bold text-slate-800 dark:text-white">{{ totalKaryawan }}</p>
+          <p class="text-xs text-slate-500">Total Employee</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-5">
+
+      <div class="glass-panel lg:col-span-2 flex flex-col">
+        <div class="mb-4">
+          <h2 class="font-semibold text-sm text-slate-800 dark:text-slate-200">Composition by Group</h2>
+          <p class="text-xs text-slate-500 mt-0.5">Employee Distribution by Group</p>
+        </div>
+        <div class="relative" style="height:260px">
+          <canvas #donutCanvas></canvas>
+        </div>
+      </div>
+
+      <div class="glass-panel lg:col-span-3 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="font-semibold text-sm text-slate-800 dark:text-slate-200">Recent Activity</h2>
+            <p class="text-xs text-slate-500 mt-0.5">Last 8 Actions by All Employees</p>
+          </div>
+          <a routerLink="/employees"
+            class="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1">
+            Show All <i class="fa fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <div *ngIf="logTerbaru.length === 0" class="flex-1 flex items-center justify-center py-8">
+          <div class="text-center">
+            <i class="fa fa-history text-slate-600 text-3xl mb-3 block"></i>
+            <p class="text-sm text-slate-500">No activities yet</p>
+          </div>
+        </div>
+
+        <div *ngIf="logTerbaru.length > 0" class="flex flex-col gap-2 overflow-y-auto" style="max-height:290px">
+          <div *ngFor="let log of logTerbaru"
+            class="flex items-start gap-3 p-3 rounded-lg bg-white/[0.03] border border-white/[0.04] hover:bg-white/[0.06] transition-colors">
+
+            <div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" [ngClass]="{
+                'bg-emerald-500/20': log.action === 'Insert',
+                'bg-blue-500/20': log.action === 'Update',
+                'bg-amber-500/20': log.action !== 'Insert' && log.action !== 'Update'
+              }">
+              <i class="fa text-xs" [ngClass]="{
+                'fa-plus text-emerald-400': log.action === 'Insert',
+                'fa-pencil text-blue-400': log.action === 'Update',
+                'fa-refresh text-amber-400': log.action !== 'Insert' && log.action !== 'Update'
+              }"></i>
+            </div>
+
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-xs font-semibold text-slate-800 dark:text-white truncate">{{ log.namaKaryawan
+                  }}</span>
+                <span class="text-xs px-1.5 py-0.5 rounded font-medium" [class]="warnaBadge(log.action)">
+                  {{ log.action }}
+                </span>
+              </div>
+              <p class="text-xs text-slate-400 mt-0.5 truncate">oleh {{ log.name }}</p>
+            </div>
+
+            <div class="text-right flex-shrink-0">
+              <p class="text-xs text-slate-500">{{ log.date }}</p>
+              <p class="text-xs text-slate-600">{{ log.time }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="app-footer text-center">
+    <span>2026 &copy;hafizh</span>
+  </footer>
+</div>

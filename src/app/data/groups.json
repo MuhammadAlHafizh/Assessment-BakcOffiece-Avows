@@ -1,0 +1,52 @@
+[
+  {
+    "uuid": "4f9d0c64-4b53-4b08-8e6f-124b6f125a11",
+    "name": "Technology",
+    "status": "Active"
+  },
+  {
+    "uuid": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+    "name": "Human Resources",
+    "status": "Active"
+  },
+  {
+    "uuid": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+    "name": "Finance",
+    "status": "Active"
+  },
+  {
+    "uuid": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+    "name": "Marketing",
+    "status": "Active"
+  },
+  {
+    "uuid": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+    "name": "Sales",
+    "status": "Active"
+  },
+  {
+    "uuid": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+    "name": "Operations",
+    "status": "Active"
+  },
+  {
+    "uuid": "af9d0c64-4b53-4b08-8e6f-124b6f125a77",
+    "name": "Legal",
+    "status": "Active"
+  },
+  {
+    "uuid": "bf9d0c64-4b53-4b08-8e6f-124b6f125a88",
+    "name": "Procurement",
+    "status": "Active"
+  },
+  {
+    "uuid": "cf9d0c64-4b53-4b08-8e6f-124b6f125a99",
+    "name": "Quality Assurance",
+    "status": "Active"
+  },
+  {
+    "uuid": "df9d0c64-4b53-4b08-8e6f-124b6f125a00",
+    "name": "Research & Development",
+    "status": "Active"
+  }
+]

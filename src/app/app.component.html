@@ -1,0 +1,51 @@
+<router-outlet></router-outlet>
+
+<div *ngIf="employeeService.activePopup" class="fixed inset-0 flex items-center justify-center z-50 p-4" style="background: rgba(15, 23, 42, 0.65); backdrop-filter: blur(4px);">
+  <div class="bg-white dark:bg-slate-900 rounded-lg shadow-2xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in duration-200 border border-slate-200 dark:border-slate-800">
+
+    <div class="px-4 py-3 flex items-center justify-between text-white font-semibold"
+      [ngClass]="{
+        'bg-[#5cd169]': employeeService.activePopup.type === 'green',
+        'bg-red-500': employeeService.activePopup.type === 'red',
+        'bg-amber-500': employeeService.activePopup.type === 'yellow'
+      }">
+      <span>Notification</span>
+      <button type="button" (click)="employeeService.closePopup()" class="text-white hover:text-slate-100 text-lg font-light leading-none focus:outline-none">
+        ✕
+      </button>
+    </div>
+
+    <div class="p-6 flex flex-col items-center text-center gap-4 bg-white dark:bg-slate-900">
+      
+      <div class="w-14 h-14 rounded-full flex items-center justify-center text-3xl"
+        [ngClass]="{
+          'bg-emerald-100 text-[#5cd169] dark:bg-emerald-900/30 dark:text-emerald-400': employeeService.activePopup.type === 'green',
+          'bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400': employeeService.activePopup.type === 'red',
+          'bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400': employeeService.activePopup.type === 'yellow'
+        }">
+        <i class="fa" 
+          [ngClass]="{
+            'fa-check-circle': employeeService.activePopup.type === 'green',
+            'fa-exclamation-circle': employeeService.activePopup.type === 'red',
+            'fa-warning': employeeService.activePopup.type === 'yellow'
+          }"></i>
+      </div>
+
+      <p class="text-slate-700 dark:text-slate-200 font-medium text-sm px-2">
+        {{ employeeService.activePopup.text }}
+      </p>
+
+      <div class="w-full flex justify-end mt-2">
+        <button type="button" (click)="employeeService.closePopup()" 
+          class="font-semibold text-white px-5 py-2 rounded focus:outline-none transition-all active:scale-95 text-xs"
+          [ngClass]="{
+            'bg-[#5cd169] hover:bg-[#4bc058]': employeeService.activePopup.type === 'green',
+            'bg-red-500 hover:bg-red-600': employeeService.activePopup.type === 'red',
+            'bg-amber-500 hover:bg-amber-600': employeeService.activePopup.type === 'yellow'
+          }">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

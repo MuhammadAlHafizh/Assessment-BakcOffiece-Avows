@@ -1,0 +1,47 @@
+<div class="app-container">
+
+  <div class="flex items-center justify-center flex-1 px-4 py-10">
+    <div class="w-full max-w-md">
+
+      <div class="text-center mb-8">
+        <div class="login-title">AVOWS <span class="text-blue-400">Employee</span></div>
+        <p class="login-subtitle">Sign in to your employee portal</p>
+      </div>
+
+      <div class="glass-panel">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="flex flex-col gap-5">
+
+          <div class="form-group">
+            <label class="form-label" for="username">Username</label>
+            <input type="text" id="username" formControlName="username" class="form-control"
+              [ngClass]="{ 'border-red-500': submitted && f['username'].errors }" placeholder="Enter username (admin)"
+              autocomplete="username" />
+            <div *ngIf="submitted && f['username'].errors" class="form-error">
+              Username is required
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <input type="password" id="password" formControlName="password" class="form-control"
+              [ngClass]="{ 'border-red-500': submitted && f['password'].errors }"
+              placeholder="Enter password (admin123)" autocomplete="current-password" />
+            <div *ngIf="submitted && f['password'].errors" class="form-error">
+              <span *ngIf="f['password'].errors['required']">Password is required</span>
+              <span *ngIf="f['password'].errors['minlength']">Password must be at least 4 characters</span>
+            </div>
+          </div>
+
+          <div *ngIf="errorMessage" class="text-red-400 text-sm text-center -mt-2">
+            {{ errorMessage }}
+          </div>
+
+          <button type="submit" class="btn btn-primary w-full justify-center py-3 mt-2">
+            Sign In
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

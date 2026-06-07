@@ -1,0 +1,123 @@
+<div class="app-container">
+  <app-header></app-header>
+
+  <main class="main-content !max-w-screen-2xl">
+    <div class="flex flex-col gap-1 mb-6">
+      <h1 class="page-title">Detail Group</h1>
+      <app-breadcrumb [items]="breadcrumbs"></app-breadcrumb>
+    </div>
+
+    <div class="glass-panel max-w-3xl mx-auto text-center" *ngIf="!group">
+      <div class="text-rose-400 text-5xl mb-4"><i class="fa fa-exclamation-triangle"></i></div>
+      <h2 class="text-xl font-bold mb-3">Group Tidak Ditemukan</h2>
+      <p class="text-slate-400 mb-6 text-sm">
+        Group dengan UUID "{{ uuidParam }}" tidak ada atau sudah dihapus.
+      </p>
+      <button class="btn btn-primary" (click)="goBack()">Kembali ke Daftar</button>
+    </div>
+
+    <div *ngIf="group" class="flex flex-col gap-5 mb-6">
+
+      <div class="glass-panel">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+          <div class="relative flex-shrink-0">
+            <div
+              class="w-20 h-20 rounded-2xl bg-gradient-to-br from-indigo-500 to-pink-600 flex items-center justify-center text-3xl font-bold text-white shadow-lg shadow-indigo-500/25">
+              {{ group.name.substring(0, 2).toUpperCase() }}
+            </div>
+            <div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full border-2 border-slate-800 shadow"
+              [ngClass]="group.status === 'Active' ? 'bg-emerald-400' : 'bg-rose-400'">
+            </div>
+          </div>
+
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <h2 class="text-2xl font-bold text-slate-800 dark:text-white">{{ group.name }}</h2>
+              <span class="badge" [ngClass]="group.status === 'Active' ? 'badge-active' : 'badge-inactive'">
+                {{ group.status }}
+              </span>
+            </div>
+          </div>
+
+          <div class="flex gap-2 flex-shrink-0 self-start">
+            <a [routerLink]="['/groups/update', group.uuid]"
+              class="btn btn-outline text-xs px-4 py-2 flex items-center gap-1.5">
+              <i class="fa fa-pencil"></i> Edit
+            </a>
+            <button class="btn btn-primary text-xs px-4 py-2 flex items-center gap-1.5" (click)="goBack()">
+              <i class="fa fa-check"></i> Back
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-panel">
+        <div class="flex items-center gap-2 mb-5 pb-4 border-b border-white/[0.06]">
+          <div class="w-8 h-8 rounded-lg bg-blue-500/15 text-blue-400 flex items-center justify-center text-sm">
+            <i class="fa fa-sitemap"></i>
+          </div>
+          <h3 class="font-semibold text-sm text-slate-800 dark:text-slate-200">Informasi Group</h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-0 divide-y divide-white/[0.04] sm:divide-y-0">
+          <div class="detail-row sm:border-r border-white/[0.04]">
+            <span class="detail-row-label">Nama Grup</span>
+            <span class="detail-row-value">{{ group.name }}</span>
+          </div>
+
+          <div class="detail-row">
+            <span class="detail-row-label">Status</span>
+            <span class="detail-row-value">
+              <button class="badge cursor-pointer transition-all hover:scale-105 active:scale-95"
+                [ngClass]="group.status === 'Active' ? 'badge-active' : 'badge-inactive'"
+                (click)="toggleGroupStatus(group)" title="Klik buat ganti status">
+                <i class="fa" [ngClass]="group.status === 'Active' ? 'fa-check-circle' : 'fa-times-circle'"></i>
+                {{ group.status }}
+              </button>
+              <span class="text-xs text-slate-500 ml-2">klik buat toggle</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-panel" *ngIf="group.history && group.history.length > 0">
+        <div class="flex items-center gap-2 mb-5 pb-4 border-b border-white/[0.06]">
+          <div class="w-8 h-8 rounded-lg bg-amber-500/15 text-amber-400 flex items-center justify-center text-sm">
+            <i class="fa fa-history"></i>
+          </div>
+          <h3 class="font-semibold text-sm text-slate-800 dark:text-slate-200">Riwayat Perubahan</h3>
+          <span class="ml-auto text-xs text-slate-500">{{ group.history.length }} entri</span>
+        </div>
+
+        <div class="flex flex-col gap-2 max-h-56 overflow-y-auto pr-1">
+          <div *ngFor="let log of group.history; let i = index"
+            class="flex items-start gap-3 p-3 rounded-lg bg-white/[0.03] border border-white/[0.04] hover:bg-white/[0.05] transition-colors">
+            <div class="flex flex-col items-center gap-1">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center text-xs flex-shrink-0"
+                [ngClass]="log.action === 'Insert' ? 'bg-emerald-500/20 text-emerald-400' : log.action === 'Update' ? 'bg-blue-500/20 text-blue-400' : 'bg-amber-500/20 text-amber-400'">
+                <i class="fa"
+                  [ngClass]="log.action === 'Insert' ? 'fa-plus' : log.action === 'Update' ? 'fa-pencil' : 'fa-refresh'"></i>
+              </div>
+            </div>
+
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-xs font-semibold"
+                  [ngClass]="log.action === 'Insert' ? 'text-emerald-400' : log.action === 'Update' ? 'text-blue-400' : 'text-amber-400'">
+                  {{ log.action }}
+                </span>
+                <span class="text-xs text-slate-300">oleh {{ log.name }}</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-0.5">{{ log.date }} pukul {{ log.time }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="app-footer text-center">
+    <span>2026 &copy;hafizh</span>
+  </footer>
+</div>

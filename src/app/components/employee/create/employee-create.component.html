@@ -1,0 +1,143 @@
+<div class="app-container">
+  
+  <app-header></app-header>
+
+  <main class="main-content !max-w-screen-2xl">
+    
+    <div class="flex items-center gap-3 mb-1">
+      <button type="button" (click)="onCancel()"
+        class="text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-colors text-2xl font-light focus:outline-none"
+        title="Cancel">
+        ✕
+      </button>
+      <h1 class="text-2xl font-bold text-[#0c394e] dark:text-slate-100">Create Employee</h1>
+    </div>
+
+    <div class="mb-6">
+      <app-breadcrumb [items]="breadcrumbs"></app-breadcrumb>
+    </div>
+
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      
+      <div class="glass-panel mb-6">
+        <h2 class="text-[#0c394e] dark:text-blue-400 font-bold text-base mb-5">General Information</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div class="form-group">
+            <label class="form-label text-[#0a354a] dark:text-slate-300 font-semibold" for="username">Username *</label>
+            <input type="text" id="username" formControlName="username"
+              class="w-full px-3 py-2 border border-[#d1d5db] dark:border-slate-700 rounded-md text-sm bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 outline-none focus:border-[#0091cb] focus:ring-1 focus:ring-[#0091cb] transition-all"
+              [ngClass]="{ 'border-red-500': submitted && f['username'].errors }" placeholder="Enter username" />
+            <div *ngIf="submitted && f['username'].errors" class="text-red-400 text-xs mt-1">Username is required</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label text-[#0a354a] dark:text-slate-300 font-semibold" for="email">Email Address
+              *</label>
+            <input type="email" id="email" formControlName="email"
+              class="w-full px-3 py-2 border border-[#d1d5db] dark:border-slate-700 rounded-md text-sm bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 outline-none focus:border-[#0091cb] focus:ring-1 focus:ring-[#0091cb] transition-all"
+              [ngClass]="{ 'border-red-500': submitted && f['email'].errors }" placeholder="Enter email address" />
+            <div *ngIf="submitted && f['email'].errors" class="text-red-400 text-xs mt-1">
+              <span *ngIf="f['email'].errors['required']">Email is required</span>
+              <span *ngIf="f['email'].errors['email']">Email format is invalid</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label text-[#0a354a] dark:text-slate-300 font-semibold">Group *</label>
+            <div class="searchable-select-container relative">
+              <div
+                class="w-full px-3 py-2 border border-[#d1d5db] dark:border-slate-700 rounded-md text-sm bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 flex justify-between items-center cursor-pointer transition-all"
+                [ngClass]="{ 'border-red-500': submitted && f['group'].errors, 'focus:border-[#0091cb] focus:ring-1 focus:ring-[#0091cb]': showDropdown }"
+                (click)="toggleDropdown()">
+                <span [ngClass]="{ 'text-slate-400': !selectedGroup }">{{ selectedGroup || 'Select' }}</span>
+                <i class="fa fa-caret-down text-slate-400"></i>
+              </div>
+
+              <div class="searchable-select-dropdown" *ngIf="showDropdown">
+                <div class="searchable-select-search">
+                  <input type="text" placeholder="Search group..." [(ngModel)]="groupSearch"
+                    [ngModelOptions]="{standalone: true}" (ngModelChange)="filterGroups()"
+                    (click)="$event.stopPropagation()"
+                    class="w-full bg-transparent outline-none text-sm text-slate-800 dark:text-slate-300 placeholder-slate-400 dark:placeholder-slate-600" />
+                </div>
+                <ul class="max-h-48 overflow-y-auto">
+                  <li *ngFor="let g of filteredGroups" class="searchable-select-option"
+                    [ngClass]="{ 'selected': g === selectedGroup }" (click)="selectGroup(g)">{{ g }}</li>
+                  <li *ngIf="filteredGroups.length === 0" class="searchable-select-empty">No groups found</li>
+                </ul>
+              </div>
+            </div>
+            <div *ngIf="submitted && f['group'].errors" class="text-red-400 text-xs mt-1">Group is required</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label text-[#0a354a] dark:text-slate-300 font-semibold" for="firstName">First Name
+              *</label>
+            <input type="text" id="firstName" formControlName="firstName"
+              class="w-full px-3 py-2 border border-[#d1d5db] dark:border-slate-700 rounded-md text-sm bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 outline-none focus:border-[#0091cb] focus:ring-1 focus:ring-[#0091cb] transition-all"
+              [ngClass]="{ 'border-red-500': submitted && f['firstName'].errors }" placeholder="Enter first name" />
+            <div *ngIf="submitted && f['firstName'].errors" class="text-red-400 text-xs mt-1">First name is required
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label text-[#0a354a] dark:text-slate-300 font-semibold" for="lastName">Last Name
+              *</label>
+            <input type="text" id="lastName" formControlName="lastName"
+              class="w-full px-3 py-2 border border-[#d1d5db] dark:border-slate-700 rounded-md text-sm bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 outline-none focus:border-[#0091cb] focus:ring-1 focus:ring-[#0091cb] transition-all"
+              [ngClass]="{ 'border-red-500': submitted && f['lastName'].errors }" placeholder="Enter last name" />
+            <div *ngIf="submitted && f['lastName'].errors" class="text-red-400 text-xs mt-1">Last name is required</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label text-[#0a354a] dark:text-slate-300 font-semibold" for="birthDate">Birth Date
+              *</label>
+            <input type="text" id="birthDate" formControlName="birthDate" placeholder="Select Birth Date"
+              class="w-full px-3 py-2 border border-[#d1d5db] dark:border-slate-700 rounded-md text-sm bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 outline-none focus:border-[#0091cb] focus:ring-1 focus:ring-[#0091cb] transition-all"
+              [ngClass]="{ 'border-red-500': submitted && f['birthDate'].errors }" />
+            <div *ngIf="submitted && f['birthDate'].errors" class="text-red-400 text-xs mt-1">
+              <span *ngIf="f['birthDate'].errors['required']">Birth date is required</span>
+              <span *ngIf="f['birthDate'].errors['futureDate']">Birth date cannot be in the future</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label text-[#0a354a] dark:text-slate-300 font-semibold" for="basicSalary">Basic Salary
+              (Rp) *</label>
+            <input type="text" id="basicSalary" formControlName="basicSalary" (input)="formatSalary($event)"
+              class="w-full px-3 py-2 border border-[#d1d5db] dark:border-slate-700 rounded-md text-sm bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 outline-none focus:border-[#0091cb] focus:ring-1 focus:ring-[#0091cb] transition-all"
+              [ngClass]="{ 'border-red-500': submitted && f['basicSalary'].errors }" placeholder="Enter basic salary" />
+            <div *ngIf="submitted && f['basicSalary'].errors" class="text-red-400 text-xs mt-1">
+              <span *ngIf="f['basicSalary'].errors['required']">Basic salary is required</span>
+              <span *ngIf="f['basicSalary'].errors['pattern']">Must be a valid positive number</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label text-[#0a354a] dark:text-slate-300 font-semibold" for="description">Joining Date
+              &amp; Time (Description) *</label>
+            <input type="text" id="description" formControlName="description" placeholder="Select Joining Date & Time"
+              class="w-full px-3 py-2 border border-[#d1d5db] dark:border-slate-700 rounded-md text-sm bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 outline-none focus:border-[#0091cb] focus:ring-1 focus:ring-[#0091cb] transition-all"
+              [ngClass]="{ 'border-red-500': submitted && f['description'].errors }" />
+            <div *ngIf="submitted && f['description'].errors" class="text-red-400 text-xs mt-1">Joining date/time is
+              required</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="flex gap-4 w-full md:w-auto justify-start mt-6">
+        <app-button variant="outline" customClass="flex-1 md:flex-initial md:w-32 justify-center text-center font-bold"
+          (btnClick)="onCancel()">Cancel</app-button>
+        <app-button type="submit" variant="solid"
+          customClass="flex-1 md:flex-initial md:w-32 justify-center text-center font-bold">Save</app-button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="app-footer text-center">
+    <span>2026 &copy;hafizh</span>
+  </footer>
+</div>

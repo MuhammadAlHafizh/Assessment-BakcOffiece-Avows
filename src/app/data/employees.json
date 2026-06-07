@@ -1,0 +1,2939 @@
+[
+  {
+    "id": "5d288aef-396d-4fa3-ada3-8c3618d909b2",
+    "username": "jane.johnson1",
+    "firstName": "Jane",
+    "lastName": "Johnson",
+    "email": "jane.johnson1@corporate.com",
+    "birthDate": "1971-02-01T17:00:00.000Z",
+    "basicSalary": 4900000,
+    "status": "Inactive",
+    "group": {
+      "id": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+      "name": "Human Resources"
+    },
+    "description": "2019-04-01T17:00:00.000Z",
+    "history": [
+      {
+        "date": "02/04/2019",
+        "time": "11:16",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "ecbf0aae-d42a-46bc-971d-5b8a283ed485",
+    "username": "michael.williams2",
+    "firstName": "Michael",
+    "lastName": "Williams",
+    "email": "michael.williams2@corporate.com",
+    "birthDate": "1972-03-02T17:00:00.000Z",
+    "basicSalary": 5300000,
+    "status": "Active",
+    "group": {
+      "id": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+      "name": "Finance"
+    },
+    "description": "2020-07-02T17:00:00.000Z",
+    "history": [
+      {
+        "date": "03/07/2020",
+        "time": "12:17",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "05/07/2020",
+        "time": "16:12",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "c62ce7b1-9a01-4f72-b97e-9cb64766b846",
+    "username": "emily.brown3",
+    "firstName": "Emily",
+    "lastName": "Brown",
+    "email": "emily.brown3@corporate.com",
+    "birthDate": "1973-04-03T17:00:00.000Z",
+    "basicSalary": 4950000,
+    "status": "Inactive",
+    "group": {
+      "id": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+      "name": "Marketing"
+    },
+    "description": "2021-10-03T17:00:00.000Z",
+    "history": [
+      {
+        "date": "04/10/2021",
+        "time": "13:18",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "08/10/2021",
+        "time": "17:08",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "3cfcf5b1-f382-4038-886f-ea558230c6f6",
+    "username": "david.jones4",
+    "firstName": "David",
+    "lastName": "Jones",
+    "email": "david.jones4@corporate.com",
+    "birthDate": "1974-05-04T17:00:00.000Z",
+    "basicSalary": 5350000,
+    "status": "Active",
+    "group": {
+      "id": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+      "name": "Sales"
+    },
+    "description": "2022-01-04T17:00:00.000Z",
+    "history": [
+      {
+        "date": "05/01/2022",
+        "time": "10:19",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "07/01/2022",
+        "time": "14:14",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "309fee0f-620e-409a-a623-da2f9f5233dc",
+    "username": "sarah.garcia5",
+    "firstName": "Sarah",
+    "lastName": "Garcia",
+    "email": "sarah.garcia5@corporate.com",
+    "birthDate": "1975-06-05T17:00:00.000Z",
+    "basicSalary": 5750000,
+    "status": "Inactive",
+    "group": {
+      "id": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+      "name": "Operations"
+    },
+    "description": "2023-04-05T17:00:00.000Z",
+    "history": [
+      {
+        "date": "06/04/2023",
+        "time": "11:20",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "a8a87266-533b-427f-b0fb-6783937f5060",
+    "username": "james.miller6",
+    "firstName": "James",
+    "lastName": "Miller",
+    "email": "james.miller6@corporate.com",
+    "birthDate": "1976-07-06T17:00:00.000Z",
+    "basicSalary": 5400000,
+    "status": "Active",
+    "group": {
+      "id": "af9d0c64-4b53-4b08-8e6f-124b6f125a77",
+      "name": "Legal"
+    },
+    "description": "2024-07-06T17:00:00.000Z",
+    "history": [
+      {
+        "date": "07/07/2024",
+        "time": "12:21",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "09/07/2024",
+        "time": "16:16",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "11/07/2024",
+        "time": "16:11",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "aed874d0-94a5-40dc-887c-7a1599737d5d",
+    "username": "jessica.davis7",
+    "firstName": "Jessica",
+    "lastName": "Davis",
+    "email": "jessica.davis7@corporate.com",
+    "birthDate": "1977-08-07T17:00:00.000Z",
+    "basicSalary": 5800000,
+    "status": "Inactive",
+    "group": {
+      "id": "bf9d0c64-4b53-4b08-8e6f-124b6f125a88",
+      "name": "Procurement"
+    },
+    "description": "2025-10-07T17:00:00.000Z",
+    "history": [
+      {
+        "date": "08/10/2025",
+        "time": "13:22",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "f749f077-3444-4142-a8f2-0d9c65f81346",
+    "username": "robert.rodriguez8",
+    "firstName": "Robert",
+    "lastName": "Rodriguez",
+    "email": "robert.rodriguez8@corporate.com",
+    "birthDate": "1978-09-08T17:00:00.000Z",
+    "basicSalary": 6200000,
+    "status": "Active",
+    "group": {
+      "id": "cf9d0c64-4b53-4b08-8e6f-124b6f125a99",
+      "name": "Quality Assurance"
+    },
+    "description": "2018-01-08T17:00:00.000Z",
+    "history": [
+      {
+        "date": "09/01/2018",
+        "time": "10:23",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "11/01/2018",
+        "time": "14:18",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "3a4cc68d-af24-4350-b8e9-b07c238e96a1",
+    "username": "karen.martinez9",
+    "firstName": "Karen",
+    "lastName": "Martinez",
+    "email": "karen.martinez9@corporate.com",
+    "birthDate": "1979-10-09T17:00:00.000Z",
+    "basicSalary": 5850000,
+    "status": "Inactive",
+    "group": {
+      "id": "df9d0c64-4b53-4b08-8e6f-124b6f125a00",
+      "name": "Research & Development"
+    },
+    "description": "2019-04-09T17:00:00.000Z",
+    "history": [
+      {
+        "date": "10/04/2019",
+        "time": "11:24",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "14/04/2019",
+        "time": "17:14",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "486e14bb-69ac-4e0c-bc6f-30af64ddd4f8",
+    "username": "william.hernandez10",
+    "firstName": "William",
+    "lastName": "Hernandez",
+    "email": "william.hernandez10@corporate.com",
+    "birthDate": "1980-11-10T17:00:00.000Z",
+    "basicSalary": 6250000,
+    "status": "Active",
+    "group": {
+      "id": "4f9d0c64-4b53-4b08-8e6f-124b6f125a11",
+      "name": "Technology"
+    },
+    "description": "2020-07-10T17:00:00.000Z",
+    "history": [
+      {
+        "date": "11/07/2020",
+        "time": "12:25",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "13/07/2020",
+        "time": "16:20",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "21891576-1ab5-470c-ac32-03adf5cd053b",
+    "username": "ashley.lopez11",
+    "firstName": "Ashley",
+    "lastName": "Lopez",
+    "email": "ashley.lopez11@corporate.com",
+    "birthDate": "1981-12-11T17:00:00.000Z",
+    "basicSalary": 6650000,
+    "status": "Inactive",
+    "group": {
+      "id": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+      "name": "Human Resources"
+    },
+    "description": "2021-10-11T17:00:00.000Z",
+    "history": [
+      {
+        "date": "12/10/2021",
+        "time": "13:26",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "98867f66-5be0-4455-a55a-f9062cf08852",
+    "username": "joseph.gonzalez12",
+    "firstName": "Joseph",
+    "lastName": "Gonzalez",
+    "email": "joseph.gonzalez12@corporate.com",
+    "birthDate": "1982-01-12T17:00:00.000Z",
+    "basicSalary": 6300000,
+    "status": "Active",
+    "group": {
+      "id": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+      "name": "Finance"
+    },
+    "description": "2022-01-12T17:00:00.000Z",
+    "history": [
+      {
+        "date": "13/01/2022",
+        "time": "10:27",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "15/01/2022",
+        "time": "14:22",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "17/01/2022",
+        "time": "16:17",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "343422c9-082b-4f4f-bedb-8b825df7fc23",
+    "username": "amanda.wilson13",
+    "firstName": "Amanda",
+    "lastName": "Wilson",
+    "email": "amanda.wilson13@corporate.com",
+    "birthDate": "1983-02-13T17:00:00.000Z",
+    "basicSalary": 6700000,
+    "status": "Inactive",
+    "group": {
+      "id": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+      "name": "Marketing"
+    },
+    "description": "2023-04-13T17:00:00.000Z",
+    "history": [
+      {
+        "date": "14/04/2023",
+        "time": "11:28",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "967313b4-4cb4-4bab-b5a1-c57c864ab76d",
+    "username": "thomas.anderson14",
+    "firstName": "Thomas",
+    "lastName": "Anderson",
+    "email": "thomas.anderson14@corporate.com",
+    "birthDate": "1984-03-14T17:00:00.000Z",
+    "basicSalary": 7100000,
+    "status": "Active",
+    "group": {
+      "id": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+      "name": "Sales"
+    },
+    "description": "2024-07-14T17:00:00.000Z",
+    "history": [
+      {
+        "date": "15/07/2024",
+        "time": "12:29",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "17/07/2024",
+        "time": "16:24",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "ca1026b2-23e0-4f68-a20c-de42e8d9f16d",
+    "username": "melissa.thomas15",
+    "firstName": "Melissa",
+    "lastName": "Thomas",
+    "email": "melissa.thomas15@corporate.com",
+    "birthDate": "1985-04-15T17:00:00.000Z",
+    "basicSalary": 6750000,
+    "status": "Inactive",
+    "group": {
+      "id": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+      "name": "Operations"
+    },
+    "description": "2025-10-15T17:00:00.000Z",
+    "history": [
+      {
+        "date": "16/10/2025",
+        "time": "13:30",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "20/10/2025",
+        "time": "17:20",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "819637d0-eb3a-4831-9555-138d57ab0c4a",
+    "username": "john.smith16",
+    "firstName": "John",
+    "lastName": "Smith",
+    "email": "john.smith16@corporate.com",
+    "birthDate": "1986-05-16T17:00:00.000Z",
+    "basicSalary": 7150000,
+    "status": "Active",
+    "group": {
+      "id": "af9d0c64-4b53-4b08-8e6f-124b6f125a77",
+      "name": "Legal"
+    },
+    "description": "2018-01-16T17:00:00.000Z",
+    "history": [
+      {
+        "date": "17/01/2018",
+        "time": "10:31",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "19/01/2018",
+        "time": "14:26",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "43691147-9023-4f2e-a8de-907bb4ed8f6f",
+    "username": "jane.johnson17",
+    "firstName": "Jane",
+    "lastName": "Johnson",
+    "email": "jane.johnson17@corporate.com",
+    "birthDate": "1987-06-17T17:00:00.000Z",
+    "basicSalary": 7550000,
+    "status": "Inactive",
+    "group": {
+      "id": "bf9d0c64-4b53-4b08-8e6f-124b6f125a88",
+      "name": "Procurement"
+    },
+    "description": "2019-04-17T17:00:00.000Z",
+    "history": [
+      {
+        "date": "18/04/2019",
+        "time": "11:32",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "2bd641f3-2fe9-4aea-af53-9962bc55fca9",
+    "username": "michael.williams18",
+    "firstName": "Michael",
+    "lastName": "Williams",
+    "email": "michael.williams18@corporate.com",
+    "birthDate": "1988-07-18T17:00:00.000Z",
+    "basicSalary": 7200000,
+    "status": "Active",
+    "group": {
+      "id": "cf9d0c64-4b53-4b08-8e6f-124b6f125a99",
+      "name": "Quality Assurance"
+    },
+    "description": "2020-07-18T17:00:00.000Z",
+    "history": [
+      {
+        "date": "19/07/2020",
+        "time": "12:33",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "21/07/2020",
+        "time": "16:28",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "23/07/2020",
+        "time": "16:23",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "b7679546-e233-4fe2-8e01-7e65f51bb0b4",
+    "username": "emily.brown19",
+    "firstName": "Emily",
+    "lastName": "Brown",
+    "email": "emily.brown19@corporate.com",
+    "birthDate": "1989-08-19T17:00:00.000Z",
+    "basicSalary": 7600000,
+    "status": "Inactive",
+    "group": {
+      "id": "df9d0c64-4b53-4b08-8e6f-124b6f125a00",
+      "name": "Research & Development"
+    },
+    "description": "2021-10-19T17:00:00.000Z",
+    "history": [
+      {
+        "date": "20/10/2021",
+        "time": "13:34",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "189baf27-8506-48db-b256-98376d3d558e",
+    "username": "david.jones20",
+    "firstName": "David",
+    "lastName": "Jones",
+    "email": "david.jones20@corporate.com",
+    "birthDate": "1990-09-20T17:00:00.000Z",
+    "basicSalary": 8000000,
+    "status": "Active",
+    "group": {
+      "id": "4f9d0c64-4b53-4b08-8e6f-124b6f125a11",
+      "name": "Technology"
+    },
+    "description": "2022-01-20T17:00:00.000Z",
+    "history": [
+      {
+        "date": "21/01/2022",
+        "time": "10:35",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "23/01/2022",
+        "time": "14:30",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "fb2d84ff-ebd3-442c-b4cd-13615c5702ff",
+    "username": "sarah.garcia21",
+    "firstName": "Sarah",
+    "lastName": "Garcia",
+    "email": "sarah.garcia21@corporate.com",
+    "birthDate": "1991-10-21T17:00:00.000Z",
+    "basicSalary": 7650000,
+    "status": "Inactive",
+    "group": {
+      "id": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+      "name": "Human Resources"
+    },
+    "description": "2023-04-21T17:00:00.000Z",
+    "history": [
+      {
+        "date": "22/04/2023",
+        "time": "11:36",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "26/04/2023",
+        "time": "17:26",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "a09fc1b8-44d2-4e80-9587-97a674a848f4",
+    "username": "james.miller22",
+    "firstName": "James",
+    "lastName": "Miller",
+    "email": "james.miller22@corporate.com",
+    "birthDate": "1992-11-22T17:00:00.000Z",
+    "basicSalary": 8050000,
+    "status": "Active",
+    "group": {
+      "id": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+      "name": "Finance"
+    },
+    "description": "2024-07-22T17:00:00.000Z",
+    "history": [
+      {
+        "date": "23/07/2024",
+        "time": "12:37",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "25/07/2024",
+        "time": "16:32",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "ebd2e4ab-bff5-43e5-8283-8129d8cfef7a",
+    "username": "jessica.davis23",
+    "firstName": "Jessica",
+    "lastName": "Davis",
+    "email": "jessica.davis23@corporate.com",
+    "birthDate": "1993-12-23T17:00:00.000Z",
+    "basicSalary": 8450000,
+    "status": "Inactive",
+    "group": {
+      "id": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+      "name": "Marketing"
+    },
+    "description": "2025-10-23T17:00:00.000Z",
+    "history": [
+      {
+        "date": "24/10/2025",
+        "time": "13:38",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "23e29680-9a33-46f5-b3c0-cc4236815a37",
+    "username": "robert.rodriguez24",
+    "firstName": "Robert",
+    "lastName": "Rodriguez",
+    "email": "robert.rodriguez24@corporate.com",
+    "birthDate": "1994-01-24T17:00:00.000Z",
+    "basicSalary": 8100000,
+    "status": "Active",
+    "group": {
+      "id": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+      "name": "Sales"
+    },
+    "description": "2018-01-24T17:00:00.000Z",
+    "history": [
+      {
+        "date": "25/01/2018",
+        "time": "10:39",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "27/01/2018",
+        "time": "14:34",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "29/01/2018",
+        "time": "16:29",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "6774084b-44ea-4852-a52b-c33df37dacdb",
+    "username": "karen.martinez25",
+    "firstName": "Karen",
+    "lastName": "Martinez",
+    "email": "karen.martinez25@corporate.com",
+    "birthDate": "1995-02-25T17:00:00.000Z",
+    "basicSalary": 8500000,
+    "status": "Inactive",
+    "group": {
+      "id": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+      "name": "Operations"
+    },
+    "description": "2019-04-25T17:00:00.000Z",
+    "history": [
+      {
+        "date": "26/04/2019",
+        "time": "11:40",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "076ee3b7-8aa2-4239-82de-5279cea9494b",
+    "username": "william.hernandez26",
+    "firstName": "William",
+    "lastName": "Hernandez",
+    "email": "william.hernandez26@corporate.com",
+    "birthDate": "1996-03-26T17:00:00.000Z",
+    "basicSalary": 8900000,
+    "status": "Active",
+    "group": {
+      "id": "af9d0c64-4b53-4b08-8e6f-124b6f125a77",
+      "name": "Legal"
+    },
+    "description": "2020-07-26T17:00:00.000Z",
+    "history": [
+      {
+        "date": "27/07/2020",
+        "time": "12:41",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "29/07/2020",
+        "time": "16:36",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "6011a5b7-e583-416a-898d-ec94c8378a29",
+    "username": "ashley.lopez27",
+    "firstName": "Ashley",
+    "lastName": "Lopez",
+    "email": "ashley.lopez27@corporate.com",
+    "birthDate": "1997-04-27T17:00:00.000Z",
+    "basicSalary": 8550000,
+    "status": "Inactive",
+    "group": {
+      "id": "bf9d0c64-4b53-4b08-8e6f-124b6f125a88",
+      "name": "Procurement"
+    },
+    "description": "2021-10-27T17:00:00.000Z",
+    "history": [
+      {
+        "date": "28/10/2021",
+        "time": "13:42",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "01/11/2021",
+        "time": "17:32",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "7b9e0da8-baba-40d9-b150-b7b57ea53a15",
+    "username": "joseph.gonzalez28",
+    "firstName": "Joseph",
+    "lastName": "Gonzalez",
+    "email": "joseph.gonzalez28@corporate.com",
+    "birthDate": "1998-04-30T17:00:00.000Z",
+    "basicSalary": 8950000,
+    "status": "Active",
+    "group": {
+      "id": "cf9d0c64-4b53-4b08-8e6f-124b6f125a99",
+      "name": "Quality Assurance"
+    },
+    "description": "2021-12-31T17:00:00.000Z",
+    "history": [
+      {
+        "date": "01/01/2022",
+        "time": "10:43",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "03/01/2022",
+        "time": "14:38",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "b9722664-fee3-420e-91c5-bbe6a1860dc7",
+    "username": "amanda.wilson29",
+    "firstName": "Amanda",
+    "lastName": "Wilson",
+    "email": "amanda.wilson29@corporate.com",
+    "birthDate": "1999-06-01T17:00:00.000Z",
+    "basicSalary": 9350000,
+    "status": "Inactive",
+    "group": {
+      "id": "df9d0c64-4b53-4b08-8e6f-124b6f125a00",
+      "name": "Research & Development"
+    },
+    "description": "2023-04-01T17:00:00.000Z",
+    "history": [
+      {
+        "date": "02/04/2023",
+        "time": "11:44",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "dae3eb74-807d-4cc1-82f9-04d47e757222",
+    "username": "thomas.anderson30",
+    "firstName": "Thomas",
+    "lastName": "Anderson",
+    "email": "thomas.anderson30@corporate.com",
+    "birthDate": "2000-07-02T17:00:00.000Z",
+    "basicSalary": 9000000,
+    "status": "Active",
+    "group": {
+      "id": "4f9d0c64-4b53-4b08-8e6f-124b6f125a11",
+      "name": "Technology"
+    },
+    "description": "2024-07-02T17:00:00.000Z",
+    "history": [
+      {
+        "date": "03/07/2024",
+        "time": "12:45",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "05/07/2024",
+        "time": "16:40",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "07/07/2024",
+        "time": "16:35",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "c5c11ebc-b5f5-4b3d-aa1d-b76850fd04bc",
+    "username": "melissa.thomas31",
+    "firstName": "Melissa",
+    "lastName": "Thomas",
+    "email": "melissa.thomas31@corporate.com",
+    "birthDate": "2001-08-03T17:00:00.000Z",
+    "basicSalary": 9400000,
+    "status": "Inactive",
+    "group": {
+      "id": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+      "name": "Human Resources"
+    },
+    "description": "2025-10-03T17:00:00.000Z",
+    "history": [
+      {
+        "date": "04/10/2025",
+        "time": "13:46",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "65ee237e-b28f-4b2c-aa3f-8eb5a6b29ff3",
+    "username": "john.smith32",
+    "firstName": "John",
+    "lastName": "Smith",
+    "email": "john.smith32@corporate.com",
+    "birthDate": "1970-09-04T17:00:00.000Z",
+    "basicSalary": 9800000,
+    "status": "Active",
+    "group": {
+      "id": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+      "name": "Finance"
+    },
+    "description": "2018-01-04T17:00:00.000Z",
+    "history": [
+      {
+        "date": "05/01/2018",
+        "time": "10:47",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "07/01/2018",
+        "time": "14:42",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "dd230c35-b52c-451f-a809-3abf51ec8d9d",
+    "username": "jane.johnson33",
+    "firstName": "Jane",
+    "lastName": "Johnson",
+    "email": "jane.johnson33@corporate.com",
+    "birthDate": "1971-10-05T17:00:00.000Z",
+    "basicSalary": 9450000,
+    "status": "Inactive",
+    "group": {
+      "id": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+      "name": "Marketing"
+    },
+    "description": "2019-04-05T17:00:00.000Z",
+    "history": [
+      {
+        "date": "06/04/2019",
+        "time": "11:48",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "10/04/2019",
+        "time": "17:38",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "c86b4ddc-a886-4852-93b1-b842e5b9fbe6",
+    "username": "michael.williams34",
+    "firstName": "Michael",
+    "lastName": "Williams",
+    "email": "michael.williams34@corporate.com",
+    "birthDate": "1972-11-06T17:00:00.000Z",
+    "basicSalary": 9850000,
+    "status": "Active",
+    "group": {
+      "id": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+      "name": "Sales"
+    },
+    "description": "2020-07-06T17:00:00.000Z",
+    "history": [
+      {
+        "date": "07/07/2020",
+        "time": "12:49",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "09/07/2020",
+        "time": "16:44",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "fa432b85-77ef-45f4-830b-d054d3de2e2f",
+    "username": "emily.brown35",
+    "firstName": "Emily",
+    "lastName": "Brown",
+    "email": "emily.brown35@corporate.com",
+    "birthDate": "1973-12-07T17:00:00.000Z",
+    "basicSalary": 10250000,
+    "status": "Inactive",
+    "group": {
+      "id": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+      "name": "Operations"
+    },
+    "description": "2021-10-07T17:00:00.000Z",
+    "history": [
+      {
+        "date": "08/10/2021",
+        "time": "13:50",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "a65f228a-eee1-4957-8c51-4b9c4b328b96",
+    "username": "david.jones36",
+    "firstName": "David",
+    "lastName": "Jones",
+    "email": "david.jones36@corporate.com",
+    "birthDate": "1974-01-08T17:00:00.000Z",
+    "basicSalary": 9900000,
+    "status": "Active",
+    "group": {
+      "id": "af9d0c64-4b53-4b08-8e6f-124b6f125a77",
+      "name": "Legal"
+    },
+    "description": "2022-01-08T17:00:00.000Z",
+    "history": [
+      {
+        "date": "09/01/2022",
+        "time": "10:51",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "11/01/2022",
+        "time": "14:46",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "13/01/2022",
+        "time": "16:41",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "0891e7e0-1745-4038-8287-31faa49922e5",
+    "username": "sarah.garcia37",
+    "firstName": "Sarah",
+    "lastName": "Garcia",
+    "email": "sarah.garcia37@corporate.com",
+    "birthDate": "1975-02-09T17:00:00.000Z",
+    "basicSalary": 10300000,
+    "status": "Inactive",
+    "group": {
+      "id": "bf9d0c64-4b53-4b08-8e6f-124b6f125a88",
+      "name": "Procurement"
+    },
+    "description": "2023-04-09T17:00:00.000Z",
+    "history": [
+      {
+        "date": "10/04/2023",
+        "time": "11:52",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "86f4608e-9586-451c-be79-57bba625943e",
+    "username": "james.miller38",
+    "firstName": "James",
+    "lastName": "Miller",
+    "email": "james.miller38@corporate.com",
+    "birthDate": "1976-03-10T17:00:00.000Z",
+    "basicSalary": 10700000,
+    "status": "Active",
+    "group": {
+      "id": "cf9d0c64-4b53-4b08-8e6f-124b6f125a99",
+      "name": "Quality Assurance"
+    },
+    "description": "2024-07-10T17:00:00.000Z",
+    "history": [
+      {
+        "date": "11/07/2024",
+        "time": "12:53",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "13/07/2024",
+        "time": "16:48",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "cdac9b4a-f6fa-4501-a77f-0e168235f404",
+    "username": "jessica.davis39",
+    "firstName": "Jessica",
+    "lastName": "Davis",
+    "email": "jessica.davis39@corporate.com",
+    "birthDate": "1977-04-11T17:00:00.000Z",
+    "basicSalary": 10350000,
+    "status": "Inactive",
+    "group": {
+      "id": "df9d0c64-4b53-4b08-8e6f-124b6f125a00",
+      "name": "Research & Development"
+    },
+    "description": "2025-10-11T17:00:00.000Z",
+    "history": [
+      {
+        "date": "12/10/2025",
+        "time": "13:54",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "16/10/2025",
+        "time": "17:44",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "290ad112-6387-49e0-bd86-7b33d857d760",
+    "username": "robert.rodriguez40",
+    "firstName": "Robert",
+    "lastName": "Rodriguez",
+    "email": "robert.rodriguez40@corporate.com",
+    "birthDate": "1978-05-12T17:00:00.000Z",
+    "basicSalary": 10750000,
+    "status": "Active",
+    "group": {
+      "id": "4f9d0c64-4b53-4b08-8e6f-124b6f125a11",
+      "name": "Technology"
+    },
+    "description": "2018-01-12T17:00:00.000Z",
+    "history": [
+      {
+        "date": "13/01/2018",
+        "time": "10:15",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "15/01/2018",
+        "time": "14:50",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "e682ee3a-31c8-4ccd-995f-d317c0fec51a",
+    "username": "karen.martinez41",
+    "firstName": "Karen",
+    "lastName": "Martinez",
+    "email": "karen.martinez41@corporate.com",
+    "birthDate": "1979-06-13T17:00:00.000Z",
+    "basicSalary": 11150000,
+    "status": "Inactive",
+    "group": {
+      "id": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+      "name": "Human Resources"
+    },
+    "description": "2019-04-13T17:00:00.000Z",
+    "history": [
+      {
+        "date": "14/04/2019",
+        "time": "11:16",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "36671214-ec11-4395-9a5d-b2a9ce326275",
+    "username": "william.hernandez42",
+    "firstName": "William",
+    "lastName": "Hernandez",
+    "email": "william.hernandez42@corporate.com",
+    "birthDate": "1980-07-14T17:00:00.000Z",
+    "basicSalary": 10800000,
+    "status": "Active",
+    "group": {
+      "id": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+      "name": "Finance"
+    },
+    "description": "2020-07-14T17:00:00.000Z",
+    "history": [
+      {
+        "date": "15/07/2020",
+        "time": "12:17",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "17/07/2020",
+        "time": "16:52",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "19/07/2020",
+        "time": "16:47",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "4e1cef8b-6014-48ad-adb9-33a6352c1cc2",
+    "username": "ashley.lopez43",
+    "firstName": "Ashley",
+    "lastName": "Lopez",
+    "email": "ashley.lopez43@corporate.com",
+    "birthDate": "1981-08-15T17:00:00.000Z",
+    "basicSalary": 11200000,
+    "status": "Inactive",
+    "group": {
+      "id": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+      "name": "Marketing"
+    },
+    "description": "2021-10-15T17:00:00.000Z",
+    "history": [
+      {
+        "date": "16/10/2021",
+        "time": "13:18",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "7cd39dbc-6e4f-4f89-bda7-ebcfa6a7ee52",
+    "username": "joseph.gonzalez44",
+    "firstName": "Joseph",
+    "lastName": "Gonzalez",
+    "email": "joseph.gonzalez44@corporate.com",
+    "birthDate": "1982-09-16T17:00:00.000Z",
+    "basicSalary": 11600000,
+    "status": "Active",
+    "group": {
+      "id": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+      "name": "Sales"
+    },
+    "description": "2022-01-16T17:00:00.000Z",
+    "history": [
+      {
+        "date": "17/01/2022",
+        "time": "10:19",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "19/01/2022",
+        "time": "14:54",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "a5999cf5-82c2-4a2e-bf0b-e23b4c4f414b",
+    "username": "amanda.wilson45",
+    "firstName": "Amanda",
+    "lastName": "Wilson",
+    "email": "amanda.wilson45@corporate.com",
+    "birthDate": "1983-10-17T17:00:00.000Z",
+    "basicSalary": 11250000,
+    "status": "Inactive",
+    "group": {
+      "id": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+      "name": "Operations"
+    },
+    "description": "2023-04-17T17:00:00.000Z",
+    "history": [
+      {
+        "date": "18/04/2023",
+        "time": "11:20",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "22/04/2023",
+        "time": "17:50",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "aa0f0020-2319-4460-8d0b-f2794a644f0f",
+    "username": "thomas.anderson46",
+    "firstName": "Thomas",
+    "lastName": "Anderson",
+    "email": "thomas.anderson46@corporate.com",
+    "birthDate": "1984-11-18T17:00:00.000Z",
+    "basicSalary": 11650000,
+    "status": "Active",
+    "group": {
+      "id": "af9d0c64-4b53-4b08-8e6f-124b6f125a77",
+      "name": "Legal"
+    },
+    "description": "2024-07-18T17:00:00.000Z",
+    "history": [
+      {
+        "date": "19/07/2024",
+        "time": "12:21",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "21/07/2024",
+        "time": "16:11",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "8c423118-6353-4cff-839e-183ea4e14410",
+    "username": "melissa.thomas47",
+    "firstName": "Melissa",
+    "lastName": "Thomas",
+    "email": "melissa.thomas47@corporate.com",
+    "birthDate": "1985-12-19T17:00:00.000Z",
+    "basicSalary": 12050000,
+    "status": "Inactive",
+    "group": {
+      "id": "bf9d0c64-4b53-4b08-8e6f-124b6f125a88",
+      "name": "Procurement"
+    },
+    "description": "2025-10-19T17:00:00.000Z",
+    "history": [
+      {
+        "date": "20/10/2025",
+        "time": "13:22",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "8eae5045-de20-4361-8321-af15d2f0e3c7",
+    "username": "john.smith48",
+    "firstName": "John",
+    "lastName": "Smith",
+    "email": "john.smith48@corporate.com",
+    "birthDate": "1986-01-20T17:00:00.000Z",
+    "basicSalary": 11700000,
+    "status": "Active",
+    "group": {
+      "id": "cf9d0c64-4b53-4b08-8e6f-124b6f125a99",
+      "name": "Quality Assurance"
+    },
+    "description": "2018-01-20T17:00:00.000Z",
+    "history": [
+      {
+        "date": "21/01/2018",
+        "time": "10:23",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "23/01/2018",
+        "time": "14:13",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "25/01/2018",
+        "time": "16:53",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "b85d7274-d948-415f-9e79-4e7b234d6c1c",
+    "username": "jane.johnson49",
+    "firstName": "Jane",
+    "lastName": "Johnson",
+    "email": "jane.johnson49@corporate.com",
+    "birthDate": "1987-02-21T17:00:00.000Z",
+    "basicSalary": 12100000,
+    "status": "Inactive",
+    "group": {
+      "id": "df9d0c64-4b53-4b08-8e6f-124b6f125a00",
+      "name": "Research & Development"
+    },
+    "description": "2019-04-21T17:00:00.000Z",
+    "history": [
+      {
+        "date": "22/04/2019",
+        "time": "11:24",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "62095aca-7923-40c0-8b4e-79e7fa89a133",
+    "username": "michael.williams50",
+    "firstName": "Michael",
+    "lastName": "Williams",
+    "email": "michael.williams50@corporate.com",
+    "birthDate": "1988-03-22T17:00:00.000Z",
+    "basicSalary": 12500000,
+    "status": "Active",
+    "group": {
+      "id": "4f9d0c64-4b53-4b08-8e6f-124b6f125a11",
+      "name": "Technology"
+    },
+    "description": "2020-07-22T17:00:00.000Z",
+    "history": [
+      {
+        "date": "23/07/2020",
+        "time": "12:25",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "25/07/2020",
+        "time": "16:15",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "43a763b3-1e0b-4cae-8346-c3102d885bcc",
+    "username": "emily.brown51",
+    "firstName": "Emily",
+    "lastName": "Brown",
+    "email": "emily.brown51@corporate.com",
+    "birthDate": "1989-04-23T17:00:00.000Z",
+    "basicSalary": 12150000,
+    "status": "Inactive",
+    "group": {
+      "id": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+      "name": "Human Resources"
+    },
+    "description": "2021-10-23T17:00:00.000Z",
+    "history": [
+      {
+        "date": "24/10/2021",
+        "time": "13:26",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "28/10/2021",
+        "time": "17:06",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "bd019a8f-8d76-4e35-b4d0-514c70f2c6ac",
+    "username": "david.jones52",
+    "firstName": "David",
+    "lastName": "Jones",
+    "email": "david.jones52@corporate.com",
+    "birthDate": "1990-05-24T17:00:00.000Z",
+    "basicSalary": 12550000,
+    "status": "Active",
+    "group": {
+      "id": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+      "name": "Finance"
+    },
+    "description": "2022-01-24T17:00:00.000Z",
+    "history": [
+      {
+        "date": "25/01/2022",
+        "time": "10:27",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "27/01/2022",
+        "time": "14:17",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "b9ecd968-0495-411a-a95a-2f8cc28a01be",
+    "username": "sarah.garcia53",
+    "firstName": "Sarah",
+    "lastName": "Garcia",
+    "email": "sarah.garcia53@corporate.com",
+    "birthDate": "1991-06-25T17:00:00.000Z",
+    "basicSalary": 12950000,
+    "status": "Inactive",
+    "group": {
+      "id": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+      "name": "Marketing"
+    },
+    "description": "2023-04-25T17:00:00.000Z",
+    "history": [
+      {
+        "date": "26/04/2023",
+        "time": "11:28",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "f45e676c-a9d2-491b-b0c5-8a9a5ad24dd7",
+    "username": "james.miller54",
+    "firstName": "James",
+    "lastName": "Miller",
+    "email": "james.miller54@corporate.com",
+    "birthDate": "1992-07-26T17:00:00.000Z",
+    "basicSalary": 12600000,
+    "status": "Active",
+    "group": {
+      "id": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+      "name": "Sales"
+    },
+    "description": "2024-07-26T17:00:00.000Z",
+    "history": [
+      {
+        "date": "27/07/2024",
+        "time": "12:29",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "29/07/2024",
+        "time": "16:19",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "31/07/2024",
+        "time": "16:09",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "eb9f02a1-26bc-459d-a1bb-59d0dac09a62",
+    "username": "jessica.davis55",
+    "firstName": "Jessica",
+    "lastName": "Davis",
+    "email": "jessica.davis55@corporate.com",
+    "birthDate": "1993-08-27T17:00:00.000Z",
+    "basicSalary": 13000000,
+    "status": "Inactive",
+    "group": {
+      "id": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+      "name": "Operations"
+    },
+    "description": "2025-10-27T17:00:00.000Z",
+    "history": [
+      {
+        "date": "28/10/2025",
+        "time": "13:30",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "adc98155-5bce-44a8-9ad2-5905a20052b9",
+    "username": "robert.rodriguez56",
+    "firstName": "Robert",
+    "lastName": "Rodriguez",
+    "email": "robert.rodriguez56@corporate.com",
+    "birthDate": "1994-08-31T17:00:00.000Z",
+    "basicSalary": 13400000,
+    "status": "Active",
+    "group": {
+      "id": "af9d0c64-4b53-4b08-8e6f-124b6f125a77",
+      "name": "Legal"
+    },
+    "description": "2017-12-31T17:00:00.000Z",
+    "history": [
+      {
+        "date": "01/01/2018",
+        "time": "10:31",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "03/01/2018",
+        "time": "14:21",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "25a9dbd1-8868-4cd5-a851-5449c89ccd98",
+    "username": "karen.martinez57",
+    "firstName": "Karen",
+    "lastName": "Martinez",
+    "email": "karen.martinez57@corporate.com",
+    "birthDate": "1995-10-01T17:00:00.000Z",
+    "basicSalary": 13050000,
+    "status": "Inactive",
+    "group": {
+      "id": "bf9d0c64-4b53-4b08-8e6f-124b6f125a88",
+      "name": "Procurement"
+    },
+    "description": "2019-04-01T17:00:00.000Z",
+    "history": [
+      {
+        "date": "02/04/2019",
+        "time": "11:32",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "06/04/2019",
+        "time": "17:12",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "c0bb8d4d-904d-4e7d-92aa-772e67308f05",
+    "username": "william.hernandez58",
+    "firstName": "William",
+    "lastName": "Hernandez",
+    "email": "william.hernandez58@corporate.com",
+    "birthDate": "1996-11-02T17:00:00.000Z",
+    "basicSalary": 13450000,
+    "status": "Active",
+    "group": {
+      "id": "cf9d0c64-4b53-4b08-8e6f-124b6f125a99",
+      "name": "Quality Assurance"
+    },
+    "description": "2020-07-02T17:00:00.000Z",
+    "history": [
+      {
+        "date": "03/07/2020",
+        "time": "12:33",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "05/07/2020",
+        "time": "16:23",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "fef0a3cc-5f45-4d9b-9a53-d50d1d490f0e",
+    "username": "ashley.lopez59",
+    "firstName": "Ashley",
+    "lastName": "Lopez",
+    "email": "ashley.lopez59@corporate.com",
+    "birthDate": "1997-12-03T17:00:00.000Z",
+    "basicSalary": 13850000,
+    "status": "Inactive",
+    "group": {
+      "id": "df9d0c64-4b53-4b08-8e6f-124b6f125a00",
+      "name": "Research & Development"
+    },
+    "description": "2021-10-03T17:00:00.000Z",
+    "history": [
+      {
+        "date": "04/10/2021",
+        "time": "13:34",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "69c925c3-c442-4833-99bc-9858ee2ead50",
+    "username": "joseph.gonzalez60",
+    "firstName": "Joseph",
+    "lastName": "Gonzalez",
+    "email": "joseph.gonzalez60@corporate.com",
+    "birthDate": "1998-01-04T17:00:00.000Z",
+    "basicSalary": 13500000,
+    "status": "Active",
+    "group": {
+      "id": "4f9d0c64-4b53-4b08-8e6f-124b6f125a11",
+      "name": "Technology"
+    },
+    "description": "2022-01-04T17:00:00.000Z",
+    "history": [
+      {
+        "date": "05/01/2022",
+        "time": "10:35",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "07/01/2022",
+        "time": "14:25",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "09/01/2022",
+        "time": "16:15",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "cc108aa0-6605-4a2d-ae5c-f8cf9ac7a0f7",
+    "username": "amanda.wilson61",
+    "firstName": "Amanda",
+    "lastName": "Wilson",
+    "email": "amanda.wilson61@corporate.com",
+    "birthDate": "1999-02-05T17:00:00.000Z",
+    "basicSalary": 13900000,
+    "status": "Inactive",
+    "group": {
+      "id": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+      "name": "Human Resources"
+    },
+    "description": "2023-04-05T17:00:00.000Z",
+    "history": [
+      {
+        "date": "06/04/2023",
+        "time": "11:36",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "0317bddd-dcef-4ee5-9571-e65c8a176a8b",
+    "username": "thomas.anderson62",
+    "firstName": "Thomas",
+    "lastName": "Anderson",
+    "email": "thomas.anderson62@corporate.com",
+    "birthDate": "2000-03-06T17:00:00.000Z",
+    "basicSalary": 14300000,
+    "status": "Active",
+    "group": {
+      "id": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+      "name": "Finance"
+    },
+    "description": "2024-07-06T17:00:00.000Z",
+    "history": [
+      {
+        "date": "07/07/2024",
+        "time": "12:37",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "09/07/2024",
+        "time": "16:27",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "d1a1bb4b-710e-436d-a2c2-cec99f84653c",
+    "username": "melissa.thomas63",
+    "firstName": "Melissa",
+    "lastName": "Thomas",
+    "email": "melissa.thomas63@corporate.com",
+    "birthDate": "2001-04-07T17:00:00.000Z",
+    "basicSalary": 13950000,
+    "status": "Inactive",
+    "group": {
+      "id": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+      "name": "Marketing"
+    },
+    "description": "2025-10-07T17:00:00.000Z",
+    "history": [
+      {
+        "date": "08/10/2025",
+        "time": "13:38",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "12/10/2025",
+        "time": "17:18",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "5a15e5e8-13d1-42a7-ae4c-6f56ea431760",
+    "username": "john.smith64",
+    "firstName": "John",
+    "lastName": "Smith",
+    "email": "john.smith64@corporate.com",
+    "birthDate": "1970-05-08T17:00:00.000Z",
+    "basicSalary": 14350000,
+    "status": "Active",
+    "group": {
+      "id": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+      "name": "Sales"
+    },
+    "description": "2018-01-08T17:00:00.000Z",
+    "history": [
+      {
+        "date": "09/01/2018",
+        "time": "10:39",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "11/01/2018",
+        "time": "14:29",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "4a2abd18-1bac-47ce-b5f3-3f82d8ffb7f4",
+    "username": "jane.johnson65",
+    "firstName": "Jane",
+    "lastName": "Johnson",
+    "email": "jane.johnson65@corporate.com",
+    "birthDate": "1971-06-09T17:00:00.000Z",
+    "basicSalary": 14750000,
+    "status": "Inactive",
+    "group": {
+      "id": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+      "name": "Operations"
+    },
+    "description": "2019-04-09T17:00:00.000Z",
+    "history": [
+      {
+        "date": "10/04/2019",
+        "time": "11:40",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "57b59590-4761-428a-b7ec-903d8733afa2",
+    "username": "michael.williams66",
+    "firstName": "Michael",
+    "lastName": "Williams",
+    "email": "michael.williams66@corporate.com",
+    "birthDate": "1972-07-10T17:00:00.000Z",
+    "basicSalary": 14400000,
+    "status": "Active",
+    "group": {
+      "id": "af9d0c64-4b53-4b08-8e6f-124b6f125a77",
+      "name": "Legal"
+    },
+    "description": "2020-07-10T17:00:00.000Z",
+    "history": [
+      {
+        "date": "11/07/2020",
+        "time": "12:41",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "13/07/2020",
+        "time": "16:31",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "15/07/2020",
+        "time": "16:21",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "14360d13-821c-496b-abe9-ebf76eff42a8",
+    "username": "emily.brown67",
+    "firstName": "Emily",
+    "lastName": "Brown",
+    "email": "emily.brown67@corporate.com",
+    "birthDate": "1973-08-11T17:00:00.000Z",
+    "basicSalary": 14800000,
+    "status": "Inactive",
+    "group": {
+      "id": "bf9d0c64-4b53-4b08-8e6f-124b6f125a88",
+      "name": "Procurement"
+    },
+    "description": "2021-10-11T17:00:00.000Z",
+    "history": [
+      {
+        "date": "12/10/2021",
+        "time": "13:42",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "95a295f6-3948-4921-841c-57b5412fbfc7",
+    "username": "david.jones68",
+    "firstName": "David",
+    "lastName": "Jones",
+    "email": "david.jones68@corporate.com",
+    "birthDate": "1974-09-12T17:00:00.000Z",
+    "basicSalary": 15200000,
+    "status": "Active",
+    "group": {
+      "id": "cf9d0c64-4b53-4b08-8e6f-124b6f125a99",
+      "name": "Quality Assurance"
+    },
+    "description": "2022-01-12T17:00:00.000Z",
+    "history": [
+      {
+        "date": "13/01/2022",
+        "time": "10:43",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "15/01/2022",
+        "time": "14:33",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "ce9e58a1-2928-4fac-8bf9-f37e5aa47469",
+    "username": "sarah.garcia69",
+    "firstName": "Sarah",
+    "lastName": "Garcia",
+    "email": "sarah.garcia69@corporate.com",
+    "birthDate": "1975-10-13T17:00:00.000Z",
+    "basicSalary": 14850000,
+    "status": "Inactive",
+    "group": {
+      "id": "df9d0c64-4b53-4b08-8e6f-124b6f125a00",
+      "name": "Research & Development"
+    },
+    "description": "2023-04-13T17:00:00.000Z",
+    "history": [
+      {
+        "date": "14/04/2023",
+        "time": "11:44",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "18/04/2023",
+        "time": "17:24",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "7a60f47c-c910-4bb2-b9bd-52b4455f5b07",
+    "username": "james.miller70",
+    "firstName": "James",
+    "lastName": "Miller",
+    "email": "james.miller70@corporate.com",
+    "birthDate": "1976-11-14T17:00:00.000Z",
+    "basicSalary": 15250000,
+    "status": "Active",
+    "group": {
+      "id": "4f9d0c64-4b53-4b08-8e6f-124b6f125a11",
+      "name": "Technology"
+    },
+    "description": "2024-07-14T17:00:00.000Z",
+    "history": [
+      {
+        "date": "15/07/2024",
+        "time": "12:45",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "17/07/2024",
+        "time": "16:35",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "bec787e1-dbf2-4f8c-b53e-29f3ed3c2d80",
+    "username": "jessica.davis71",
+    "firstName": "Jessica",
+    "lastName": "Davis",
+    "email": "jessica.davis71@corporate.com",
+    "birthDate": "1977-12-15T17:00:00.000Z",
+    "basicSalary": 15650000,
+    "status": "Inactive",
+    "group": {
+      "id": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+      "name": "Human Resources"
+    },
+    "description": "2025-10-15T17:00:00.000Z",
+    "history": [
+      {
+        "date": "16/10/2025",
+        "time": "13:46",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "7294835f-24e7-4bd4-9b82-7a217a25b145",
+    "username": "robert.rodriguez72",
+    "firstName": "Robert",
+    "lastName": "Rodriguez",
+    "email": "robert.rodriguez72@corporate.com",
+    "birthDate": "1978-01-16T17:00:00.000Z",
+    "basicSalary": 15300000,
+    "status": "Active",
+    "group": {
+      "id": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+      "name": "Finance"
+    },
+    "description": "2018-01-16T17:00:00.000Z",
+    "history": [
+      {
+        "date": "17/01/2018",
+        "time": "10:47",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "19/01/2018",
+        "time": "14:37",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "21/01/2018",
+        "time": "16:27",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "4fbed1b8-8e86-45c8-a998-543d2d506776",
+    "username": "karen.martinez73",
+    "firstName": "Karen",
+    "lastName": "Martinez",
+    "email": "karen.martinez73@corporate.com",
+    "birthDate": "1979-02-17T17:00:00.000Z",
+    "basicSalary": 15700000,
+    "status": "Inactive",
+    "group": {
+      "id": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+      "name": "Marketing"
+    },
+    "description": "2019-04-17T17:00:00.000Z",
+    "history": [
+      {
+        "date": "18/04/2019",
+        "time": "11:48",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "2c5ef9bf-9a5c-4aa0-b5a4-03eb319d370b",
+    "username": "william.hernandez74",
+    "firstName": "William",
+    "lastName": "Hernandez",
+    "email": "william.hernandez74@corporate.com",
+    "birthDate": "1980-03-18T17:00:00.000Z",
+    "basicSalary": 16100000,
+    "status": "Active",
+    "group": {
+      "id": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+      "name": "Sales"
+    },
+    "description": "2020-07-18T17:00:00.000Z",
+    "history": [
+      {
+        "date": "19/07/2020",
+        "time": "12:49",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "21/07/2020",
+        "time": "16:39",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "3125168f-69b5-41f2-8239-30b7c4cd3353",
+    "username": "ashley.lopez75",
+    "firstName": "Ashley",
+    "lastName": "Lopez",
+    "email": "ashley.lopez75@corporate.com",
+    "birthDate": "1981-04-19T17:00:00.000Z",
+    "basicSalary": 15750000,
+    "status": "Inactive",
+    "group": {
+      "id": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+      "name": "Operations"
+    },
+    "description": "2021-10-19T17:00:00.000Z",
+    "history": [
+      {
+        "date": "20/10/2021",
+        "time": "13:50",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "24/10/2021",
+        "time": "17:30",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "40022329-0430-4e6d-b76e-f6556698bb56",
+    "username": "joseph.gonzalez76",
+    "firstName": "Joseph",
+    "lastName": "Gonzalez",
+    "email": "joseph.gonzalez76@corporate.com",
+    "birthDate": "1982-05-20T17:00:00.000Z",
+    "basicSalary": 16150000,
+    "status": "Active",
+    "group": {
+      "id": "af9d0c64-4b53-4b08-8e6f-124b6f125a77",
+      "name": "Legal"
+    },
+    "description": "2022-01-20T17:00:00.000Z",
+    "history": [
+      {
+        "date": "21/01/2022",
+        "time": "10:51",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "23/01/2022",
+        "time": "14:41",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "68d702bb-4c82-4d55-83fd-b324f123d02a",
+    "username": "amanda.wilson77",
+    "firstName": "Amanda",
+    "lastName": "Wilson",
+    "email": "amanda.wilson77@corporate.com",
+    "birthDate": "1983-06-21T17:00:00.000Z",
+    "basicSalary": 16550000,
+    "status": "Inactive",
+    "group": {
+      "id": "bf9d0c64-4b53-4b08-8e6f-124b6f125a88",
+      "name": "Procurement"
+    },
+    "description": "2023-04-21T17:00:00.000Z",
+    "history": [
+      {
+        "date": "22/04/2023",
+        "time": "11:52",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "ecbfff6b-1c4f-49bf-b8b2-5b0e12f45677",
+    "username": "thomas.anderson78",
+    "firstName": "Thomas",
+    "lastName": "Anderson",
+    "email": "thomas.anderson78@corporate.com",
+    "birthDate": "1984-07-22T17:00:00.000Z",
+    "basicSalary": 16200000,
+    "status": "Active",
+    "group": {
+      "id": "cf9d0c64-4b53-4b08-8e6f-124b6f125a99",
+      "name": "Quality Assurance"
+    },
+    "description": "2024-07-22T17:00:00.000Z",
+    "history": [
+      {
+        "date": "23/07/2024",
+        "time": "12:53",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "25/07/2024",
+        "time": "16:43",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "27/07/2024",
+        "time": "16:33",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "e0463777-2b7f-46b6-8f8d-090507efc9d4",
+    "username": "melissa.thomas79",
+    "firstName": "Melissa",
+    "lastName": "Thomas",
+    "email": "melissa.thomas79@corporate.com",
+    "birthDate": "1985-08-23T17:00:00.000Z",
+    "basicSalary": 16600000,
+    "status": "Inactive",
+    "group": {
+      "id": "df9d0c64-4b53-4b08-8e6f-124b6f125a00",
+      "name": "Research & Development"
+    },
+    "description": "2025-10-23T17:00:00.000Z",
+    "history": [
+      {
+        "date": "24/10/2025",
+        "time": "13:54",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "23d355a2-b440-4aac-9627-9d010615ffc2",
+    "username": "john.smith80",
+    "firstName": "John",
+    "lastName": "Smith",
+    "email": "john.smith80@corporate.com",
+    "birthDate": "1986-09-24T17:00:00.000Z",
+    "basicSalary": 17000000,
+    "status": "Active",
+    "group": {
+      "id": "4f9d0c64-4b53-4b08-8e6f-124b6f125a11",
+      "name": "Technology"
+    },
+    "description": "2018-01-24T17:00:00.000Z",
+    "history": [
+      {
+        "date": "25/01/2018",
+        "time": "10:15",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "27/01/2018",
+        "time": "14:45",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "7a4006f1-0939-4142-89cb-d870833a1672",
+    "username": "jane.johnson81",
+    "firstName": "Jane",
+    "lastName": "Johnson",
+    "email": "jane.johnson81@corporate.com",
+    "birthDate": "1987-10-25T17:00:00.000Z",
+    "basicSalary": 16650000,
+    "status": "Inactive",
+    "group": {
+      "id": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+      "name": "Human Resources"
+    },
+    "description": "2019-04-25T17:00:00.000Z",
+    "history": [
+      {
+        "date": "26/04/2019",
+        "time": "11:16",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "30/04/2019",
+        "time": "17:36",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "e371868b-96f8-4ae0-97c9-00d3960a2122",
+    "username": "michael.williams82",
+    "firstName": "Michael",
+    "lastName": "Williams",
+    "email": "michael.williams82@corporate.com",
+    "birthDate": "1988-11-26T17:00:00.000Z",
+    "basicSalary": 17050000,
+    "status": "Active",
+    "group": {
+      "id": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+      "name": "Finance"
+    },
+    "description": "2020-07-26T17:00:00.000Z",
+    "history": [
+      {
+        "date": "27/07/2020",
+        "time": "12:17",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "29/07/2020",
+        "time": "16:47",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "dadc483f-3dc4-4c1c-9acf-372ffb20533c",
+    "username": "emily.brown83",
+    "firstName": "Emily",
+    "lastName": "Brown",
+    "email": "emily.brown83@corporate.com",
+    "birthDate": "1989-12-27T17:00:00.000Z",
+    "basicSalary": 17450000,
+    "status": "Inactive",
+    "group": {
+      "id": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+      "name": "Marketing"
+    },
+    "description": "2021-10-27T17:00:00.000Z",
+    "history": [
+      {
+        "date": "28/10/2021",
+        "time": "13:18",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "3dbf7b32-41e6-488b-968d-041e1dbaa440",
+    "username": "david.jones84",
+    "firstName": "David",
+    "lastName": "Jones",
+    "email": "david.jones84@corporate.com",
+    "birthDate": "1989-12-31T17:00:00.000Z",
+    "basicSalary": 17100000,
+    "status": "Active",
+    "group": {
+      "id": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+      "name": "Sales"
+    },
+    "description": "2021-12-31T17:00:00.000Z",
+    "history": [
+      {
+        "date": "01/01/2022",
+        "time": "10:19",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "03/01/2022",
+        "time": "14:49",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "05/01/2022",
+        "time": "16:39",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "dc635636-c48d-4a35-a519-ab75efecad7d",
+    "username": "sarah.garcia85",
+    "firstName": "Sarah",
+    "lastName": "Garcia",
+    "email": "sarah.garcia85@corporate.com",
+    "birthDate": "1991-02-01T17:00:00.000Z",
+    "basicSalary": 17500000,
+    "status": "Inactive",
+    "group": {
+      "id": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+      "name": "Operations"
+    },
+    "description": "2023-04-01T17:00:00.000Z",
+    "history": [
+      {
+        "date": "02/04/2023",
+        "time": "11:20",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "20551c3b-fd96-4817-829a-cb3b478abeda",
+    "username": "james.miller86",
+    "firstName": "James",
+    "lastName": "Miller",
+    "email": "james.miller86@corporate.com",
+    "birthDate": "1992-03-02T17:00:00.000Z",
+    "basicSalary": 17900000,
+    "status": "Active",
+    "group": {
+      "id": "af9d0c64-4b53-4b08-8e6f-124b6f125a77",
+      "name": "Legal"
+    },
+    "description": "2024-07-02T17:00:00.000Z",
+    "history": [
+      {
+        "date": "03/07/2024",
+        "time": "12:21",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "05/07/2024",
+        "time": "16:51",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "fee1e76a-55f3-4a56-9bf3-33fb8819c215",
+    "username": "jessica.davis87",
+    "firstName": "Jessica",
+    "lastName": "Davis",
+    "email": "jessica.davis87@corporate.com",
+    "birthDate": "1993-04-03T17:00:00.000Z",
+    "basicSalary": 17550000,
+    "status": "Inactive",
+    "group": {
+      "id": "bf9d0c64-4b53-4b08-8e6f-124b6f125a88",
+      "name": "Procurement"
+    },
+    "description": "2025-10-03T17:00:00.000Z",
+    "history": [
+      {
+        "date": "04/10/2025",
+        "time": "13:22",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "08/10/2025",
+        "time": "17:42",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "947d217c-912b-4805-bb7d-4c54693af41e",
+    "username": "robert.rodriguez88",
+    "firstName": "Robert",
+    "lastName": "Rodriguez",
+    "email": "robert.rodriguez88@corporate.com",
+    "birthDate": "1994-05-04T17:00:00.000Z",
+    "basicSalary": 17950000,
+    "status": "Active",
+    "group": {
+      "id": "cf9d0c64-4b53-4b08-8e6f-124b6f125a99",
+      "name": "Quality Assurance"
+    },
+    "description": "2018-01-04T17:00:00.000Z",
+    "history": [
+      {
+        "date": "05/01/2018",
+        "time": "10:23",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "07/01/2018",
+        "time": "14:53",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "e4554de9-13c0-465e-a731-e437c4398fc0",
+    "username": "karen.martinez89",
+    "firstName": "Karen",
+    "lastName": "Martinez",
+    "email": "karen.martinez89@corporate.com",
+    "birthDate": "1995-06-05T17:00:00.000Z",
+    "basicSalary": 18350000,
+    "status": "Inactive",
+    "group": {
+      "id": "df9d0c64-4b53-4b08-8e6f-124b6f125a00",
+      "name": "Research & Development"
+    },
+    "description": "2019-04-05T17:00:00.000Z",
+    "history": [
+      {
+        "date": "06/04/2019",
+        "time": "11:24",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "a8726843-07e1-46f6-8992-8441f7915d3e",
+    "username": "william.hernandez90",
+    "firstName": "William",
+    "lastName": "Hernandez",
+    "email": "william.hernandez90@corporate.com",
+    "birthDate": "1996-07-06T17:00:00.000Z",
+    "basicSalary": 18000000,
+    "status": "Active",
+    "group": {
+      "id": "4f9d0c64-4b53-4b08-8e6f-124b6f125a11",
+      "name": "Technology"
+    },
+    "description": "2020-07-06T17:00:00.000Z",
+    "history": [
+      {
+        "date": "07/07/2020",
+        "time": "12:25",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "09/07/2020",
+        "time": "16:10",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "11/07/2020",
+        "time": "16:45",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "dda0b0e9-6cd0-421b-8e65-b408feb89898",
+    "username": "ashley.lopez91",
+    "firstName": "Ashley",
+    "lastName": "Lopez",
+    "email": "ashley.lopez91@corporate.com",
+    "birthDate": "1997-08-07T17:00:00.000Z",
+    "basicSalary": 18400000,
+    "status": "Inactive",
+    "group": {
+      "id": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+      "name": "Human Resources"
+    },
+    "description": "2021-10-07T17:00:00.000Z",
+    "history": [
+      {
+        "date": "08/10/2021",
+        "time": "13:26",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "5749fe82-7908-43fa-8ab8-6fb31d503ebd",
+    "username": "joseph.gonzalez92",
+    "firstName": "Joseph",
+    "lastName": "Gonzalez",
+    "email": "joseph.gonzalez92@corporate.com",
+    "birthDate": "1998-09-08T17:00:00.000Z",
+    "basicSalary": 18800000,
+    "status": "Active",
+    "group": {
+      "id": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+      "name": "Finance"
+    },
+    "description": "2022-01-08T17:00:00.000Z",
+    "history": [
+      {
+        "date": "09/01/2022",
+        "time": "10:27",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "11/01/2022",
+        "time": "14:12",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "821d91b8-dd61-43bd-b66b-f922ff79e415",
+    "username": "amanda.wilson93",
+    "firstName": "Amanda",
+    "lastName": "Wilson",
+    "email": "amanda.wilson93@corporate.com",
+    "birthDate": "1999-10-09T17:00:00.000Z",
+    "basicSalary": 18450000,
+    "status": "Inactive",
+    "group": {
+      "id": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+      "name": "Marketing"
+    },
+    "description": "2023-04-09T17:00:00.000Z",
+    "history": [
+      {
+        "date": "10/04/2023",
+        "time": "11:28",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "14/04/2023",
+        "time": "17:48",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "9d097b5a-636c-4be4-bad7-de820bc90076",
+    "username": "thomas.anderson94",
+    "firstName": "Thomas",
+    "lastName": "Anderson",
+    "email": "thomas.anderson94@corporate.com",
+    "birthDate": "2000-11-10T17:00:00.000Z",
+    "basicSalary": 18850000,
+    "status": "Active",
+    "group": {
+      "id": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+      "name": "Sales"
+    },
+    "description": "2024-07-10T17:00:00.000Z",
+    "history": [
+      {
+        "date": "11/07/2024",
+        "time": "12:29",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "13/07/2024",
+        "time": "16:14",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "961ce673-ac9c-482e-b7bf-28a7d239aa0c",
+    "username": "melissa.thomas95",
+    "firstName": "Melissa",
+    "lastName": "Thomas",
+    "email": "melissa.thomas95@corporate.com",
+    "birthDate": "2001-12-11T17:00:00.000Z",
+    "basicSalary": 19250000,
+    "status": "Inactive",
+    "group": {
+      "id": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+      "name": "Operations"
+    },
+    "description": "2025-10-11T17:00:00.000Z",
+    "history": [
+      {
+        "date": "12/10/2025",
+        "time": "13:30",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "0e71689e-8c6f-40f6-93c2-12b1c4c3675e",
+    "username": "john.smith96",
+    "firstName": "John",
+    "lastName": "Smith",
+    "email": "john.smith96@corporate.com",
+    "birthDate": "1970-01-12T17:00:00.000Z",
+    "basicSalary": 18900000,
+    "status": "Active",
+    "group": {
+      "id": "af9d0c64-4b53-4b08-8e6f-124b6f125a77",
+      "name": "Legal"
+    },
+    "description": "2018-01-12T17:00:00.000Z",
+    "history": [
+      {
+        "date": "13/01/2018",
+        "time": "10:31",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "15/01/2018",
+        "time": "14:16",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "17/01/2018",
+        "time": "16:51",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "615fac2a-2ba8-4b6a-8b4f-56fdf678c3ee",
+    "username": "jane.johnson97",
+    "firstName": "Jane",
+    "lastName": "Johnson",
+    "email": "jane.johnson97@corporate.com",
+    "birthDate": "1971-02-13T17:00:00.000Z",
+    "basicSalary": 19300000,
+    "status": "Inactive",
+    "group": {
+      "id": "bf9d0c64-4b53-4b08-8e6f-124b6f125a88",
+      "name": "Procurement"
+    },
+    "description": "2019-04-13T17:00:00.000Z",
+    "history": [
+      {
+        "date": "14/04/2019",
+        "time": "11:32",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "d649e782-b2fd-4ffa-9703-1b1ebcaa2bb6",
+    "username": "michael.williams98",
+    "firstName": "Michael",
+    "lastName": "Williams",
+    "email": "michael.williams98@corporate.com",
+    "birthDate": "1972-03-14T17:00:00.000Z",
+    "basicSalary": 19700000,
+    "status": "Active",
+    "group": {
+      "id": "cf9d0c64-4b53-4b08-8e6f-124b6f125a99",
+      "name": "Quality Assurance"
+    },
+    "description": "2020-07-14T17:00:00.000Z",
+    "history": [
+      {
+        "date": "15/07/2020",
+        "time": "12:33",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "17/07/2020",
+        "time": "16:18",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "90dfaaa2-6b9f-44b8-8e78-a58d1d9b5562",
+    "username": "emily.brown99",
+    "firstName": "Emily",
+    "lastName": "Brown",
+    "email": "emily.brown99@corporate.com",
+    "birthDate": "1973-04-15T17:00:00.000Z",
+    "basicSalary": 19350000,
+    "status": "Inactive",
+    "group": {
+      "id": "df9d0c64-4b53-4b08-8e6f-124b6f125a00",
+      "name": "Research & Development"
+    },
+    "description": "2021-10-15T17:00:00.000Z",
+    "history": [
+      {
+        "date": "16/10/2021",
+        "time": "13:34",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "20/10/2021",
+        "time": "17:54",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "fc729e39-e00e-496a-a669-ccd260bf7f75",
+    "username": "david.jones100",
+    "firstName": "David",
+    "lastName": "Jones",
+    "email": "david.jones100@corporate.com",
+    "birthDate": "1974-05-16T17:00:00.000Z",
+    "basicSalary": 19750000,
+    "status": "Active",
+    "group": {
+      "id": "4f9d0c64-4b53-4b08-8e6f-124b6f125a11",
+      "name": "Technology"
+    },
+    "description": "2022-01-16T17:00:00.000Z",
+    "history": [
+      {
+        "date": "17/01/2022",
+        "time": "10:35",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "19/01/2022",
+        "time": "14:20",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "92728af4-4cb8-4a62-95a1-b36510b9287b",
+    "username": "sarah.garcia101",
+    "firstName": "Sarah",
+    "lastName": "Garcia",
+    "email": "sarah.garcia101@corporate.com",
+    "birthDate": "1975-06-17T17:00:00.000Z",
+    "basicSalary": 20150000,
+    "status": "Inactive",
+    "group": {
+      "id": "5f9d0c64-4b53-4b08-8e6f-124b6f125a22",
+      "name": "Human Resources"
+    },
+    "description": "2023-04-17T17:00:00.000Z",
+    "history": [
+      {
+        "date": "18/04/2023",
+        "time": "11:36",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "8947cef2-b898-47bf-80ff-64d3a4dd3987",
+    "username": "james.miller102",
+    "firstName": "James",
+    "lastName": "Miller",
+    "email": "james.miller102@corporate.com",
+    "birthDate": "1976-07-18T17:00:00.000Z",
+    "basicSalary": 19800000,
+    "status": "Active",
+    "group": {
+      "id": "6f9d0c64-4b53-4b08-8e6f-124b6f125a33",
+      "name": "Finance"
+    },
+    "description": "2024-07-18T17:00:00.000Z",
+    "history": [
+      {
+        "date": "19/07/2024",
+        "time": "12:37",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "21/07/2024",
+        "time": "16:22",
+        "name": "admin",
+        "action": "Update"
+      },
+      {
+        "date": "23/07/2024",
+        "time": "16:07",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  },
+  {
+    "id": "39ef3aeb-67c1-4042-a739-35a8269cf30b",
+    "username": "jessica.davis103",
+    "firstName": "Jessica",
+    "lastName": "Davis",
+    "email": "jessica.davis103@corporate.com",
+    "birthDate": "1977-08-19T17:00:00.000Z",
+    "basicSalary": 20200000,
+    "status": "Inactive",
+    "group": {
+      "id": "7f9d0c64-4b53-4b08-8e6f-124b6f125a44",
+      "name": "Marketing"
+    },
+    "description": "2025-10-19T17:00:00.000Z",
+    "history": [
+      {
+        "date": "20/10/2025",
+        "time": "13:38",
+        "name": "ivan choi",
+        "action": "Insert"
+      }
+    ]
+  },
+  {
+    "id": "a4fad7e5-d65a-447f-9da2-591b6cedb631",
+    "username": "robert.rodriguez104",
+    "firstName": "Robert",
+    "lastName": "Rodriguez",
+    "email": "robert.rodriguez104@corporate.com",
+    "birthDate": "1978-09-20T17:00:00.000Z",
+    "basicSalary": 20600000,
+    "status": "Active",
+    "group": {
+      "id": "8f9d0c64-4b53-4b08-8e6f-124b6f125a55",
+      "name": "Sales"
+    },
+    "description": "2018-01-20T17:00:00.000Z",
+    "history": [
+      {
+        "date": "21/01/2018",
+        "time": "10:39",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "23/01/2018",
+        "time": "14:24",
+        "name": "admin",
+        "action": "Update"
+      }
+    ]
+  },
+  {
+    "id": "31fb6c6b-406e-4cdb-b1c8-255064693bfe",
+    "username": "karen.martinez105",
+    "firstName": "Karen",
+    "lastName": "Martinez",
+    "email": "karen.martinez105@corporate.com",
+    "birthDate": "1979-10-21T17:00:00.000Z",
+    "basicSalary": 20250000,
+    "status": "Inactive",
+    "group": {
+      "id": "9f9d0c64-4b53-4b08-8e6f-124b6f125a66",
+      "name": "Operations"
+    },
+    "description": "2019-04-21T17:00:00.000Z",
+    "history": [
+      {
+        "date": "22/04/2019",
+        "time": "11:40",
+        "name": "ivan choi",
+        "action": "Insert"
+      },
+      {
+        "date": "26/04/2019",
+        "time": "17:10",
+        "name": "system",
+        "action": "Change Status"
+      }
+    ]
+  }
+]

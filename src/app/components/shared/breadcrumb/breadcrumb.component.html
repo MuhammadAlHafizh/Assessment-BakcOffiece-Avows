@@ -1,0 +1,16 @@
+<nav class="flex flex-wrap items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
+  <ng-container *ngFor="let item of items; let index = index; let last = last">
+    
+    <span *ngIf="index > 0" class="text-slate-400 dark:text-slate-600 select-none">•</span>
+
+    <a *ngIf="item.url && !last" [routerLink]="item.url"
+      class="hover:underline text-slate-500 dark:text-slate-400 hover:text-[#0c394e] dark:hover:text-slate-200 transition-colors">
+      {{ item.label }}
+    </a>
+
+    <span *ngIf="!item.url || last"
+      [ngClass]="last ? 'font-bold text-[#0c394e] dark:text-slate-200' : 'text-slate-500 dark:text-slate-400'">
+      {{ item.label }}
+    </span>
+  </ng-container>
+</nav>

@@ -1,0 +1,39 @@
+<div class="flex items-center justify-between flex-wrap gap-3 px-4 py-3 text-sm text-slate-400 border-t border-white/5">
+  
+  <div>
+    Showing <strong class="text-slate-100">{{ displayStartIndex }}</strong>
+    to <strong class="text-slate-100">{{ displayEndIndex }}</strong>
+    of <strong class="text-slate-100">{{ totalItems }}</strong> results
+  </div>
+
+  <div class="flex items-center gap-2 font-medium">
+    <span>Page</span>
+
+    <button
+      [disabled]="page === 1"
+      (click)="onPageClick(page - 1)"
+      class="pagination-btn"
+      aria-label="Previous page"
+    >
+      <i class="fa fa-chevron-left text-xs"></i>
+    </button>
+
+    <select
+      [ngModel]="page"
+      (ngModelChange)="onPageClick(+$event)"
+      class="pagination-btn !w-14 px-1 cursor-pointer"
+      style="background: rgba(255,255,255,0.06);"
+    >
+      <option *ngFor="let p of pagesArray" [value]="p">{{ p }}</option>
+    </select>
+
+    <button
+      [disabled]="page === totalPages"
+      (click)="onPageClick(page + 1)"
+      class="pagination-btn"
+      aria-label="Next page"
+    >
+      <i class="fa fa-chevron-right text-xs"></i>
+    </button>
+  </div>
+</div>
