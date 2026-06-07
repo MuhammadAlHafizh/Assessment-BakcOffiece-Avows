@@ -559,3 +559,43 @@ body.light-theme .flatpickr-time .numInputWrapper span.arrowUp::after {
 body.light-theme .flatpickr-time .numInputWrapper span.arrowDown::after {
   border-top-color: #334155 !important;
 }
+@layer components {
+  /* ── Custom Tooltip ── */
+  .has-tooltip {
+    position: relative;
+  }
+  
+  .has-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0px);
+    background-color: rgba(15, 23, 42, 0.95);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    z-index: 50;
+    pointer-events: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.light-theme .has-tooltip::after {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #0f172a;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+  }
+
+  .has-tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-6px);
+  }
+}
