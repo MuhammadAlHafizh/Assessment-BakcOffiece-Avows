@@ -19,6 +19,7 @@ export class EmployeeService {
 
   public searchKeyword = '';
   public searchGroup = '';
+  public statusFilter = 'Active';
   public page = 1;
   public pageSize = 25;
   public sortBy = 'username';

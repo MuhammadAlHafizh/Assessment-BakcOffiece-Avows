@@ -90,6 +90,7 @@ export class EmployeeIndexComponent implements OnInit, OnDestroy {
 
     this.searchKeyword = this.employeeService.searchKeyword;
     this.searchGroup = this.employeeService.searchGroup;
+    this.statusFilter = this.employeeService.statusFilter;
     this.page = this.employeeService.page;
     this.pageSize = this.employeeService.pageSize;
 
@@ -166,6 +167,7 @@ export class EmployeeIndexComponent implements OnInit, OnDestroy {
   saveStateToService() {
     this.employeeService.searchKeyword = this.searchKeyword;
     this.employeeService.searchGroup = this.searchGroup;
+    this.employeeService.statusFilter = this.statusFilter;
     this.employeeService.page = this.page;
     this.employeeService.pageSize = this.pageSize;
 

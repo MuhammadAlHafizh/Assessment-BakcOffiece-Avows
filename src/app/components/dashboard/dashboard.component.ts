@@ -328,4 +328,16 @@ export class DashboardComponent implements OnInit, AfterViewInit, OnDestroy {
     if (action === 'Change Status') return 'bg-amber-500/20 text-amber-400 border border-amber-500/30';
     return 'bg-slate-500/20 text-slate-400 border border-slate-500/30';
   }
+
+  goToEmployees(status: string) {
+    this.employeeService.statusFilter = status;
+    this.employeeService.page = 1;
+    this.employeeService.searchKeyword = '';
+    this.employeeService.searchGroup = '';
+    this.router.navigate(['/employees']);
+  }
+
+  goToGroups() {
+    this.router.navigate(['/groups']);
+  }
 }
