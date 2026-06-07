@@ -211,9 +211,9 @@
   }
 
   .pagination-btn {
-    @apply inline-flex items-center justify-center w-8 h-8 rounded text-sm font-medium transition-all duration-150 cursor-pointer border-0 outline-none;
+    @apply inline-flex items-center justify-center w-8 h-8 rounded text-sm font-semibold transition-all duration-150 cursor-pointer border-0 outline-none;
     background: rgba(255, 255, 255, 0.04);
-    color: #94a3b8;
+    color: #cbd5e1;
   }
 
   .pagination-btn:hover:not(:disabled) {
@@ -226,8 +226,8 @@
   }
 
   body.light-theme .pagination-btn {
-    background: rgba(15, 23, 42, 0.04);
-    color: #64748b;
+    background: rgba(15, 23, 42, 0.06);
+    color: #1e293b;
   }
 
   .detail-item {
@@ -297,7 +297,7 @@
 
   /* ── Header Nav Links ── */
   .header-nav-link {
-    @apply flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium text-slate-400 no-underline transition-all duration-150 hover:text-white hover:bg-white/[0.06];
+    @apply flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-300 no-underline transition-all duration-150 hover:text-white hover:bg-white/[0.06];
   }
 
   .header-nav-active {
@@ -305,7 +305,7 @@
   }
 
   body.light-theme .header-nav-link {
-    @apply text-slate-600 hover:text-slate-900 hover:bg-slate-100;
+    @apply text-slate-800 hover:text-slate-900 hover:bg-slate-100;
   }
 
   body.light-theme .header-nav-active {

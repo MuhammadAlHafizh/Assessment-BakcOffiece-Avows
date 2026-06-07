@@ -10,7 +10,7 @@
         <i class="fa fa-refresh"></i> Reset
       </app-button>
       <div class="flex items-center gap-2">
-        <span class="text-xs font-medium text-slate-400 whitespace-nowrap">View Status</span>
+        <span class="text-xs font-medium text-slate-800 dark:text-slate-300 whitespace-nowrap">View Status</span>
         <select [ngModel]="statusFilter" (ngModelChange)="onStatusFilterChange($event)"
           class="form-control h-9 w-28 text-xs !px-2 !py-1">
           <option value="">All</option>
@@ -19,7 +19,7 @@
         </select>
       </div>
       <div class="flex items-center gap-2">
-        <span class="text-xs font-medium text-slate-400 whitespace-nowrap">Group</span>
+        <span class="text-xs font-medium text-slate-800 dark:text-slate-300 whitespace-nowrap">Group</span>
         <select [ngModel]="searchGroup" (ngModelChange)="onSearchGroupChange($event)"
           class="form-control h-9 w-36 text-xs !px-2 !py-1">
           <option value="">All Groups</option>
@@ -30,7 +30,7 @@
 
     <div class="flex items-center gap-4">
       <div class="flex items-center gap-2">
-        <span class="text-xs font-medium text-slate-400 whitespace-nowrap">Change Status to</span>
+        <span class="text-xs font-medium text-slate-800 dark:text-slate-300 whitespace-nowrap">Change Status to</span>
         <select [ngModel]="bulkStatusTarget" (ngModelChange)="onBulkStatusTargetChange($event)" class="form-control h-9 w-28 text-xs !px-2 !py-1">
           <option value="Active">Active</option>
           <option value="Inactive">Inactive</option>
@@ -40,14 +40,14 @@
         </app-button>
       </div>
       <div class="flex items-center gap-1.5">
-        <span class="text-xs font-medium text-slate-400 whitespace-nowrap">Show</span>
+        <span class="text-xs font-medium text-slate-800 dark:text-slate-300 whitespace-nowrap">Show</span>
         <select [ngModel]="pageSize" (ngModelChange)="onPageSizeChange($event)" class="form-control h-9 w-16 text-xs !px-1.5 !py-1">
           <option [value]="10">10</option>
           <option [value]="25">25</option>
           <option [value]="50">50</option>
           <option [value]="100">100</option>
         </select>
-        <span class="text-xs font-medium text-slate-400 whitespace-nowrap">entries</span>
+        <span class="text-xs font-medium text-slate-800 dark:text-slate-300 whitespace-nowrap">entries</span>
       </div>
       <app-page-switcher [page]="page" [totalPages]="totalPages" [pagesArray]="pagesArray" (pageChange)="onPageChange($event)"></app-page-switcher>
     </div>
@@ -66,7 +66,7 @@
 
     <div class="flex flex-col sm:flex-row gap-3">
       <div class="flex-1 flex flex-col gap-1">
-        <span class="text-xs font-medium text-slate-400">View Status</span>
+        <span class="text-xs font-medium text-slate-800 dark:text-slate-300">View Status</span>
         <select [ngModel]="statusFilter" (ngModelChange)="onStatusFilterChange($event)"
           class="form-control h-10 w-full text-sm">
           <option value="">All</option>
@@ -76,7 +76,7 @@
       </div>
 
       <div class="flex-1 flex flex-col gap-1">
-        <span class="text-xs font-medium text-slate-400">Group</span>
+        <span class="text-xs font-medium text-slate-800 dark:text-slate-300">Group</span>
         <select [ngModel]="searchGroup" (ngModelChange)="onSearchGroupChange($event)"
           class="form-control h-10 w-full text-sm">
           <option value="">All Groups</option>
@@ -86,7 +86,7 @@
     </div>
 
     <div class="flex flex-col gap-1">
-      <span class="text-xs font-medium text-slate-400">Change Status to</span>
+      <span class="text-xs font-medium text-slate-800 dark:text-slate-300">Change Status to</span>
       <div class="flex gap-2">
         <select [ngModel]="bulkStatusTarget" (ngModelChange)="onBulkStatusTargetChange($event)" class="form-control h-10 flex-1 text-sm">
           <option value="Active">Active</option>
@@ -99,7 +99,7 @@
     </div>
 
     <div class="flex flex-col gap-1">
-      <span class="text-xs font-medium text-slate-400">Show Entries</span>
+      <span class="text-xs font-medium text-slate-800 dark:text-slate-300">Show Entries</span>
       <select [ngModel]="pageSize" (ngModelChange)="onPageSizeChange($event)" class="form-control h-10 w-full text-sm">
         <option [value]="10">10 entries</option>
         <option [value]="25">25 entries</option>

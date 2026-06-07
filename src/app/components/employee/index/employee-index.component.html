@@ -176,7 +176,7 @@
     <span>2026 &copy;hafizh</span>
   </footer>
 
-  <app-history-modal [show]="showHistoryModal" [title]="(activeHistoryEmployee?.group?.name || '') + ' - Audit Trail'"
+  <app-history-modal [show]="showHistoryModal" [title]="'Trail - ' + (activeHistoryEmployee?.group?.name || '')"
     [history]="activeHistoryEmployee?.history" (closed)="closeHistoryModal()">
   </app-history-modal>
 

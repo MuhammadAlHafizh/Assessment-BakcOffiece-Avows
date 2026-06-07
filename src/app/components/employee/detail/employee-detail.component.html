@@ -1,9 +1,9 @@
 <div class="app-container">
-  
+
   <app-header></app-header>
 
   <main class="main-content !max-w-screen-2xl">
-    
+
     <div class="flex flex-col gap-1 mb-6">
       <h1 class="page-title">Detail Employee</h1>
       <app-breadcrumb [items]="breadcrumbs"></app-breadcrumb>
@@ -25,23 +25,23 @@
 
           <div class="relative flex-shrink-0">
             <div
-              class="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-3xl font-bold text-white shadow-lg shadow-blue-500/25">
+              class="w-20 h-20 rounded-2xl bg-brand flex items-center justify-center text-3xl font-bold text-white shadow-lg shadow-brand/25">
               {{ employee.firstName.charAt(0) }}{{ employee.lastName.charAt(0) }}
             </div>
-            
-            <div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full border-2 border-slate-800 shadow"
+
+            <div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full border-2 border-white dark:border-slate-800 shadow"
               [ngClass]="employee.status === 'Active' ? 'bg-emerald-400' : 'bg-rose-400'">
             </div>
           </div>
 
           <div class="flex-1 min-w-0">
             <div class="flex flex-wrap items-center gap-2 mb-1">
-              <h2 class="text-2xl font-bold text-white">{{ employee.firstName }} {{ employee.lastName }}</h2>
+              <h2 class="text-2xl font-bold text-slate-800 dark:text-white">{{ employee.firstName }} {{ employee.lastName }}</h2>
               <span class="badge" [ngClass]="employee.status === 'Active' ? 'badge-active' : 'badge-inactive'">
                 {{ employee.status }}
               </span>
             </div>
-            <p class="text-slate-400 text-sm">&#64;{{ employee.username }}</p>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">&#64;{{ employee.username }}</p>
             <p class="text-slate-500 text-xs mt-1">{{ employee.email }}</p>
           </div>
 
@@ -67,11 +67,6 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-0 divide-y divide-white/[0.04] sm:divide-y-0">
-
-          <div class="detail-row sm:border-b sm:border-r border-white/[0.04]">
-            <span class="detail-row-label">ID Employee</span>
-            <span class="detail-row-value font-mono text-blue-300">{{ employee.id }}</span>
-          </div>
 
           <div class="detail-row sm:border-b border-white/[0.04]">
             <span class="detail-row-label">Username</span>

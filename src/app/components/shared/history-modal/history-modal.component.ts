@@ -16,8 +16,8 @@ export interface HistoryEntry {
   templateUrl: './history-modal.component.html'
 })
 export class HistoryModalComponent {
-  
-  @Input() title = 'Audit Trail';
+
+  @Input() title = 'Trail';
 
   @Input() history: HistoryEntry[] | null | undefined = [];
 
