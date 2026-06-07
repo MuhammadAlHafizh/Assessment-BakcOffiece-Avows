@@ -54,7 +54,7 @@ describe('Auth Guards', () => {
       expect(routerSpy.navigate).not.toHaveBeenCalled();
     });
 
-    it('should return false and redirect to employees if logged in', () => {
+    it('should return false and redirect to dashboard if logged in', () => {
       localStorage.setItem('isLoggedIn', 'true');
       const routeSnapshot = {} as ActivatedRouteSnapshot;
       const stateSnapshot = {} as RouterStateSnapshot;
@@ -62,7 +62,7 @@ describe('Auth Guards', () => {
       const result = TestBed.runInInjectionContext(() => guestGuard(routeSnapshot, stateSnapshot));
 
       expect(result).toBe(false);
-      expect(routerSpy.navigate).toHaveBeenCalledWith(['/employees']);
+      expect(routerSpy.navigate).toHaveBeenCalledWith(['/dashboard']);
     });
   });
 });

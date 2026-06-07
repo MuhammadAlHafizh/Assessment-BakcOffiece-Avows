@@ -39,7 +39,7 @@ describe('EmployeeService', () => {
       birthDate: new Date('1990-01-01'),
       basicSalary: 5000000,
       status: 'Active',
-      group: 'Technology',
+      group: { id: 'g1', name: 'Technology' },
       description: new Date(),
       history: []
     };
@@ -62,7 +62,7 @@ describe('EmployeeService', () => {
 
     const afterEmployees = service.getEmployees();
     expect(afterEmployees.length).toBe(beforeCount - 1);
-    expect(service.activePopup?.type).toBe('green');
+    expect(service.activePopup?.type).toBe('red');
     expect(service.activePopup?.text).toContain('berhasil dihapus');
   });
 

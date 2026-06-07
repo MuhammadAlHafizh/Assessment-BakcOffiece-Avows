@@ -3,11 +3,13 @@ import { Router, provideRouter } from '@angular/router';
 import { EmployeeIndexComponent } from './employee-index.component';
 import { EmployeeService } from '../services/employee.service';
 import { Employee } from '../models/employee.model';
+import { GroupService } from '../../group/services/group.service';
 
 describe('EmployeeIndexComponent', () => {
   let component: EmployeeIndexComponent;
   let fixture: ComponentFixture<EmployeeIndexComponent>;
   let mockEmployeeService: jasmine.SpyObj<EmployeeService>;
+  let mockGroupService: jasmine.SpyObj<GroupService>;
   let router: Router;
 
   const mockEmployees: Employee[] = [
@@ -20,7 +22,7 @@ describe('EmployeeIndexComponent', () => {
       birthDate: new Date('1990-01-01'),
       basicSalary: 6000000,
       status: 'Active',
-      group: 'Technology',
+      group: { id: 'g1', name: 'Technology' },
       description: new Date(),
       history: []
     },
@@ -33,7 +35,7 @@ describe('EmployeeIndexComponent', () => {
       birthDate: new Date('1992-05-15'),
       basicSalary: 8000000,
       status: 'Inactive',
-      group: 'Finance',
+      group: { id: 'g2', name: 'Finance' },
       description: new Date(),
       history: []
     }
@@ -42,7 +44,10 @@ describe('EmployeeIndexComponent', () => {
   beforeEach(async () => {
     mockEmployeeService = jasmine.createSpyObj('EmployeeService', ['getEmployees', 'deleteEmployee', 'updateEmployee']);
     mockEmployeeService.getEmployees.and.returnValue(mockEmployees);
-    mockEmployeeService.groups = ['Technology', 'Finance'];
+    
+    mockGroupService = jasmine.createSpyObj('GroupService', ['getGroups']);
+    mockGroupService.getGroups.and.returnValue([{ uuid: 'g1', name: 'Technology', status: 'Active' }, { uuid: 'g2', name: 'Finance', status: 'Active' }]);
+
     mockEmployeeService.searchKeyword = '';
     mockEmployeeService.searchGroup = '';
     mockEmployeeService.page = 1;
@@ -58,6 +63,7 @@ describe('EmployeeIndexComponent', () => {
       imports: [EmployeeIndexComponent],
       providers: [
         { provide: EmployeeService, useValue: mockEmployeeService },
+        { provide: GroupService, useValue: mockGroupService },
         provideRouter([])
       ]
     }).compileComponents();
@@ -79,7 +85,7 @@ describe('EmployeeIndexComponent', () => {
   it('should search employees by name keyword', () => {
     component.statusFilter = ''; 
     component.searchKeyword = 'Jane';
-    component.onSearchChange();
+    component.applyFiltersAndSort();
 
     expect(component.filteredEmployees.length).toBe(1);
     expect(component.filteredEmployees[0].username).toBe('janedoe');
@@ -99,9 +105,9 @@ describe('EmployeeIndexComponent', () => {
   it('should filter by group selection', () => {
     component.statusFilter = ''; 
     component.searchGroup = 'Finance';
-    component.onSearchChange();
+    component.applyFiltersAndSort();
 
     expect(component.filteredEmployees.length).toBe(1);
-    expect(component.filteredEmployees[0].group).toBe('Finance');
+    expect(component.filteredEmployees[0].group.name).toBe('Finance');
   });
 });
